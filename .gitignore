@@ -1,0 +1,21 @@
+# Backend
+designmate/venv/
+designmate/__pycache__/
+designmate/**/__pycache__/
+designmate/*.pyc
+designmate/**/*.pyc
+designmate/uploads/
+designmate/.env
+designmate/check_balance.py
+
+# Frontend
+designmate-ui/node_modules/
+designmate-ui/.next/
+designmate-ui/.env.local
+
+# General
+.DS_Store
+*.log
+*.png
+*.jpg
+*.jpeg
