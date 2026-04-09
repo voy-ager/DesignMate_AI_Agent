@@ -18,11 +18,6 @@ def _use_real_api() -> bool:
 
 
 def _build_prompt(concept: dict, room_analysis: dict):
-    """
-    Builds a detailed FLUX prompt from sourced products and room analysis.
-    Priority 2 fix: injects specific product visual descriptors to reduce
-    hallucination — ensures rendered items match sourced products.
-    """
     style_tags  = ", ".join(concept.get("style_tags", ["modern"]))
     palette     = concept.get("color_palette", {})
     primary     = palette.get("primary", "#FFFFFF")
@@ -34,31 +29,21 @@ def _build_prompt(concept: dict, room_analysis: dict):
     width_ft    = room_analysis.get("dimensions", {}).get("width_ft", 12)
     length_ft   = room_analysis.get("dimensions", {}).get("length_ft", 14)
 
-    # Build specific furniture descriptions from sourced products
-    # This is the key fix — use exact product descriptors not generic names
     furniture_parts = []
     for item in concept.get("items", []):
         descriptor = item.get("style_descriptor", "")
         name       = item.get("name", "")
-        category   = item.get("category", "")
-        price      = item.get("price", 0)
-        dims       = item.get("dimensions", {})
-        w          = dims.get("width", 0)
-        h          = dims.get("height", 0)
-
         if descriptor:
-            # Use the exact style descriptor for visual accuracy
-            furniture_parts.append(f"{descriptor}")
+            furniture_parts.append(descriptor)
         elif name:
             furniture_parts.append(name)
 
-    furniture_desc = ", ".join(furniture_parts) if furniture_parts else \
-        f"{style_tags} furniture"
+    furniture_desc = ", ".join(furniture_parts) if furniture_parts else f"{style_tags} furniture"
 
     prompt = (
         f"Interior design photograph, professional architectural photography, "
-        f"empty {room_type} now furnished, "
-        f"exact furniture visible: {furniture_desc}, "
+        f"same room structure with identical walls windows and doors, "
+        f"furnished with: {furniture_desc}, "
         f"room dimensions approximately {width_ft} by {length_ft} feet, "
         f"wall color {wall_color}, {floor_type} floors, "
         f"color scheme: primary {primary} with {accent} accents, "
@@ -66,29 +51,25 @@ def _build_prompt(concept: dict, room_analysis: dict):
         f"wide angle shot showing full room layout, "
         f"4K resolution, Architectural Digest style, "
         f"photorealistic, high detail, soft natural shadows, "
-        f"furniture placement follows room dimensions"
+        f"keep all windows doors and architectural features in exact same position"
     )
 
     negative_prompt = (
         "cluttered, distorted furniture, unrealistic lighting, "
         "cartoon, illustration, painting, blurry, people, humans, "
         "text, watermark, oversaturated, dark, empty room, "
-        "wrong furniture style, mismatched items"
+        "wrong furniture style, mismatched items, "
+        "move windows, move doors, change walls, different room structure"
     )
     return prompt, negative_prompt
 
+
 def _upload_image_to_imgbb(image_bytes: bytes) -> str:
-    """
-    Uploads image bytes to imgbb (free image hosting) and returns a public URL.
-    This converts HuggingFace's raw image bytes into a URL the frontend can display.
-    REAL API SWITCH: replace with your own storage (S3, Cloudinary, etc.) in production.
-    """
     import urllib.request
     import urllib.parse
 
     imgbb_key = os.getenv("IMGBB_API_KEY", "")
     if not imgbb_key:
-        # Save locally and return local path as fallback
         import uuid
         os.makedirs("uploads/renders", exist_ok=True)
         filename = f"uploads/renders/{uuid.uuid4()}.png"
@@ -115,7 +96,8 @@ def _upload_image_to_imgbb(image_bytes: bytes) -> str:
 async def _render_concept_async(
     concept: dict,
     room_analysis: dict,
-    state_ref: list
+    state_ref: list,
+    image_path: str
 ) -> dict:
     concept_name  = concept.get("concept_name", "Design")
     concept_index = concept.get("concept_index", 0)
@@ -136,25 +118,27 @@ async def _render_concept_async(
 
     try:
         from huggingface_hub import InferenceClient
+
         hf_token = os.getenv("HF_TOKEN", "")
-        client = InferenceClient(api_key=hf_token)
+        client   = InferenceClient(api_key=hf_token)
+
+        def run_flux():
+            try:
+                return client.text_to_image(
+                    prompt,
+                    model="black-forest-labs/FLUX.1-schnell",
+                    negative_prompt=negative_prompt,
+                )
+            except StopIteration as e:
+                raise RuntimeError(f"HF client error: {e}") from e
 
         loop = asyncio.get_event_loop()
-        img = await loop.run_in_executor(
-            None,
-            lambda: client.text_to_image(
-                prompt,
-                model="black-forest-labs/FLUX.1-schnell",
-                negative_prompt=negative_prompt,
-            )
-        )
+        img = await loop.run_in_executor(None, run_flux)
 
-        # Convert PIL image to bytes
         img_bytes = io.BytesIO()
         img.save(img_bytes, format="PNG")
         img_bytes = img_bytes.getvalue()
 
-        # Upload to get a public URL
         image_url = _upload_image_to_imgbb(img_bytes)
 
         return {
@@ -177,15 +161,10 @@ async def _render_concept_async(
 
 
 def rendering_agent(state: AppState) -> AppState:
-    """
-    Rendering agent — generates photorealistic room renders.
-    Mock path: returns colored placeholder URLs instantly.
-    Real path: calls HuggingFace FLUX.1-schnell, uploads to imgbb for public URL.
-    REAL API SWITCH: set HF_TOKEN in .env to activate real rendering.
-    Optional: set IMGBB_API_KEY for public image hosting, else saves locally.
-    """
     sourced_products = state.get("sourced_products", [])
     room_analysis    = state.get("room_analysis", {})
+    image_path       = state.get("image_path", "")
+
     state = log_stage_start(state, "rendering")
     state = log_event(state, "rendering", "render_start",
         f"Starting parallel rendering for {len(sourced_products)} concepts",
@@ -201,14 +180,14 @@ def rendering_agent(state: AppState) -> AppState:
 
     for concept in sourced_products:
         state = log_event(state, "rendering", "building_prompt",
-            f"Building FLUX prompt for '{concept.get('concept_name')}'",
+            f"Building prompt for '{concept.get('concept_name')}'",
             data={"concept": concept.get("concept_name")})
 
     state_ref = [state]
 
     async def render_all():
         tasks = [
-            _render_concept_async(concept, room_analysis, state_ref)
+            _render_concept_async(concept, room_analysis, state_ref, image_path)
             for concept in sourced_products
         ]
         return await asyncio.gather(*tasks)
@@ -226,9 +205,7 @@ def rendering_agent(state: AppState) -> AppState:
         except RuntimeError:
             render_results = asyncio.run(render_all())
 
-        render_results = sorted(
-            render_results, key=lambda x: x["concept_index"]
-        )
+        render_results = sorted(render_results, key=lambda x: x["concept_index"])
 
         for r in render_results:
             level = "success" if r.get("mode") != "mock_fallback" else "warning"

@@ -1,0 +1,212 @@
+[
+  {
+    "id": "sofa_24178",
+    "category": "sofa",
+    "name": "Sven 88 Tufted Leather Sofa Charme Tan",
+    "price": 1699.0,
+    "dimensions": {
+      "width": 82,
+      "depth": 37,
+      "height": 33
+    },
+    "style_descriptor": "sven 88 tufted leather sofa charme tan sofa leather wood brown green classic modern",
+    "purchase_url": "https://www.article.com/product/24178/sven-88-tufted-leather-sofa-charme-tan",
+    "in_stock": true
+  },
+  {
+    "id": "sofa_24836",
+    "category": "sofa",
+    "name": "Sven 88 Tufted Leather Sofa Taos Brown",
+    "price": 1699.0,
+    "dimensions": {
+      "width": 82,
+      "depth": 37,
+      "height": 33
+    },
+    "style_descriptor": "sven 88 tufted leather sofa taos brown sofa leather brown green blue classic modern",
+    "purchase_url": "https://www.article.com/product/24836/sven-88-tufted-leather-sofa-taos-brown",
+    "in_stock": true
+  },
+  {
+    "id": "sofa_24056",
+    "category": "sofa",
+    "name": "Sven 88 Tufted Leather Sofa Charme Green",
+    "price": 1699.0,
+    "dimensions": {
+      "width": 82,
+      "depth": 37,
+      "height": 33
+    },
+    "style_descriptor": "sven 88 tufted leather sofa charme green sofa leather green brown walnut classic modern",
+    "purchase_url": "https://www.article.com/product/24056/sven-88-tufted-leather-sofa-charme-green",
+    "in_stock": true
+  },
+  {
+    "id": "rug_24178",
+    "category": "rug",
+    "name": "Sven 88 Tufted Leather Sofa Charme Tan",
+    "price": 1699.0,
+    "dimensions": {
+      "width": 96,
+      "depth": 120,
+      "height": 0
+    },
+    "style_descriptor": "sven 88 tufted leather sofa charme tan rug leather wood brown green classic modern",
+    "purchase_url": "https://www.article.com/product/24178/sven-88-tufted-leather-sofa-charme-tan",
+    "in_stock": true
+  },
+  {
+    "id": "rug_24836",
+    "category": "rug",
+    "name": "Sven 88 Tufted Leather Sofa Taos Brown",
+    "price": 1699.0,
+    "dimensions": {
+      "width": 96,
+      "depth": 120,
+      "height": 0
+    },
+    "style_descriptor": "sven 88 tufted leather sofa taos brown rug leather brown green blue classic modern",
+    "purchase_url": "https://www.article.com/product/24836/sven-88-tufted-leather-sofa-taos-brown",
+    "in_stock": true
+  },
+  {
+    "id": "rug_24056",
+    "category": "rug",
+    "name": "Sven 88 Tufted Leather Sofa Charme Green",
+    "price": 1699.0,
+    "dimensions": {
+      "width": 96,
+      "depth": 120,
+      "height": 0
+    },
+    "style_descriptor": "sven 88 tufted leather sofa charme green rug leather green brown walnut classic modern",
+    "purchase_url": "https://www.article.com/product/24056/sven-88-tufted-leather-sofa-charme-green",
+    "in_stock": true
+  },
+  {
+    "id": "floor_lamp_24178",
+    "category": "floor_lamp",
+    "name": "Sven 88 Tufted Leather Sofa Charme Tan",
+    "price": 1699.0,
+    "dimensions": {
+      "width": 11,
+      "depth": 11,
+      "height": 70
+    },
+    "style_descriptor": "sven 88 tufted leather sofa charme tan floor lamp leather wood brown green classic modern",
+    "purchase_url": "https://www.article.com/product/24178/sven-88-tufted-leather-sofa-charme-tan",
+    "in_stock": true
+  },
+  {
+    "id": "floor_lamp_24836",
+    "category": "floor_lamp",
+    "name": "Sven 88 Tufted Leather Sofa Taos Brown",
+    "price": 1699.0,
+    "dimensions": {
+      "width": 11,
+      "depth": 11,
+      "height": 70
+    },
+    "style_descriptor": "sven 88 tufted leather sofa taos brown floor lamp leather brown green blue classic modern",
+    "purchase_url": "https://www.article.com/product/24836/sven-88-tufted-leather-sofa-taos-brown",
+    "in_stock": true
+  },
+  {
+    "id": "floor_lamp_24056",
+    "category": "floor_lamp",
+    "name": "Sven 88 Tufted Leather Sofa Charme Green",
+    "price": 1699.0,
+    "dimensions": {
+      "width": 11,
+      "depth": 11,
+      "height": 70
+    },
+    "style_descriptor": "sven 88 tufted leather sofa charme green floor lamp leather green brown walnut classic modern",
+    "purchase_url": "https://www.article.com/product/24056/sven-88-tufted-leather-sofa-charme-green",
+    "in_stock": true
+  },
+  {
+    "id": "accent_chair_24178",
+    "category": "accent_chair",
+    "name": "Sven 88 Tufted Leather Sofa Charme Tan",
+    "price": 1699.0,
+    "dimensions": {
+      "width": 28,
+      "depth": 30,
+      "height": 32
+    },
+    "style_descriptor": "sven 88 tufted leather sofa charme tan accent chair leather wood brown green classic modern",
+    "purchase_url": "https://www.article.com/product/24178/sven-88-tufted-leather-sofa-charme-tan",
+    "in_stock": true
+  },
+  {
+    "id": "accent_chair_24836",
+    "category": "accent_chair",
+    "name": "Sven 88 Tufted Leather Sofa Taos Brown",
+    "price": 1699.0,
+    "dimensions": {
+      "width": 28,
+      "depth": 30,
+      "height": 32
+    },
+    "style_descriptor": "sven 88 tufted leather sofa taos brown accent chair leather brown green blue classic modern",
+    "purchase_url": "https://www.article.com/product/24836/sven-88-tufted-leather-sofa-taos-brown",
+    "in_stock": true
+  },
+  {
+    "id": "accent_chair_24056",
+    "category": "accent_chair",
+    "name": "Sven 88 Tufted Leather Sofa Charme Green",
+    "price": 1699.0,
+    "dimensions": {
+      "width": 28,
+      "depth": 30,
+      "height": 32
+    },
+    "style_descriptor": "sven 88 tufted leather sofa charme green accent chair leather green brown walnut classic modern",
+    "purchase_url": "https://www.article.com/product/24056/sven-88-tufted-leather-sofa-charme-green",
+    "in_stock": true
+  },
+  {
+    "id": "bookshelf_24178",
+    "category": "bookshelf",
+    "name": "Sven 88 Tufted Leather Sofa Charme Tan",
+    "price": 1699.0,
+    "dimensions": {
+      "width": 31,
+      "depth": 15,
+      "height": 79
+    },
+    "style_descriptor": "sven 88 tufted leather sofa charme tan bookshelf leather wood brown green classic modern",
+    "purchase_url": "https://www.article.com/product/24178/sven-88-tufted-leather-sofa-charme-tan",
+    "in_stock": true
+  },
+  {
+    "id": "bookshelf_24836",
+    "category": "bookshelf",
+    "name": "Sven 88 Tufted Leather Sofa Taos Brown",
+    "price": 1699.0,
+    "dimensions": {
+      "width": 31,
+      "depth": 15,
+      "height": 79
+    },
+    "style_descriptor": "sven 88 tufted leather sofa taos brown bookshelf leather brown green blue classic modern",
+    "purchase_url": "https://www.article.com/product/24836/sven-88-tufted-leather-sofa-taos-brown",
+    "in_stock": true
+  },
+  {
+    "id": "bookshelf_24056",
+    "category": "bookshelf",
+    "name": "Sven 88 Tufted Leather Sofa Charme Green",
+    "price": 1699.0,
+    "dimensions": {
+      "width": 31,
+      "depth": 15,
+      "height": 79
+    },
+    "style_descriptor": "sven 88 tufted leather sofa charme green bookshelf leather green brown walnut classic modern",
+    "purchase_url": "https://www.article.com/product/24056/sven-88-tufted-leather-sofa-charme-green",
+    "in_stock": true
+  }
+]
