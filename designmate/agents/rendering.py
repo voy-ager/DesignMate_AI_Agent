@@ -150,6 +150,7 @@ async def _render_concept_async(
         }
 
     except Exception as e:
+        print(f"[RENDER ERROR] {str(e)}")
         return {
             "concept_name":  concept_name,
             "concept_index": concept_index,

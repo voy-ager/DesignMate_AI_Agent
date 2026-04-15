@@ -179,4 +179,4 @@ To expand the catalog, edit `CATEGORIES` in `serpScraper.py` and re-run both scr
 - **Budget sensitivity graph** — show coherence vs budget tradeoff as a sparkline
 - **Weighted Style DNA** — allow blended styles like "70% Modern, 30% Industrial"
 - **ControlNet rendering** — use depth maps from original photo to preserve room structure in generated images
-- **Larger catalog** — expand beyond 100 products for more diverse design concepts
+- **Larger catalog** — expand beyond 100 products for more diverse design concepts++

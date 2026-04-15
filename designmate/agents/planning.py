@@ -18,104 +18,48 @@ def _use_real_api() -> bool:
     return bool(os.getenv("GROQ_API_KEY", "").strip())
 
 
-def _use_pinecone() -> bool:
-    return bool(os.getenv("PINECONE_API_KEY", "").strip())
+CATEGORY_MAP = {
+    "coffee table":   "coffee_table",
+    "side table":     "side_table",
+    "end table":      "side_table",
+    "area rug":       "rug",
+    "rug":            "rug",
+    "floor rug":      "rug",
+    "floor lamp":     "floor_lamp",
+    "table lamp":     "floor_lamp",
+    "lamp":           "floor_lamp",
+    "lighting":       "floor_lamp",
+    "accent chair":   "accent_chair",
+    "armchair":       "accent_chair",
+    "chair":          "accent_chair",
+    "lounge chair":   "accent_chair",
+    "throw blanket":  "throw_blanket",
+    "blanket":        "throw_blanket",
+    "throw":          "throw_blanket",
+    "sectional sofa": "sofa",
+    "sectional":      "sofa",
+    "couch":          "sofa",
+    "loveseat":       "sofa",
+    "sofa":           "sofa",
+    "bookcase":       "bookshelf",
+    "bookshelf":      "bookshelf",
+    "shelving unit":  "bookshelf",
+    "shelving":       "bookshelf",
+    "dining table":   "dining_table",
+    "dining":         "dining_table",
+    "bed frame":      "bed_frame",
+    "bed":            "bed_frame",
+    "side table":     "side_table",
+    "nightstand":     "side_table",
+}
 
 
-def _fetch_catalog_from_pinecone() -> list:
-    """
-    Fetches all products from Pinecone and returns a compact list
-    for the LLM to design with.
-    """
-    from pinecone import Pinecone
-    pc    = Pinecone(api_key=os.getenv("PINECONE_API_KEY", ""))
-    index = pc.Index("designmate-products")
-
-    # Fetch all products using a dummy vector query with high top_k
-    # We use a zero vector since we want all products, not semantic search
-    import numpy as np
-    dummy_vector = [0.0] * 384
-
-    results = index.query(
-        vector=dummy_vector,
-        top_k=200,
-        include_metadata=True
-    )
-
-    products = []
-    for match in results.matches:
-        meta = match.metadata
-        dims = meta.get("dimensions", "{}")
-        if isinstance(dims, str):
-            try:
-                dims = json.loads(dims)
-            except Exception:
-                dims = {}
-
-        materials = meta.get("materials", "[]")
-        if isinstance(materials, str):
-            try:
-                materials = json.loads(materials)
-            except Exception:
-                materials = []
-
-        colors = meta.get("colors", "[]")
-        if isinstance(colors, str):
-            try:
-                colors = json.loads(colors)
-            except Exception:
-                colors = []
-
-        style_tags = meta.get("style_tags", "[]")
-        if isinstance(style_tags, str):
-            try:
-                style_tags = json.loads(style_tags)
-            except Exception:
-                style_tags = []
-
-        products.append({
-            "product_id":   match.id,
-            "category":     meta.get("category", ""),
-            "name":         meta.get("name", ""),
-            "price":        float(meta.get("price", 0)),
-            "dimensions":   dims,
-            "materials":    materials,
-            "colors":       colors,
-            "style_tags":   style_tags,
-            "description":  meta.get("description", ""),
-            "purchase_url": meta.get("purchase_url", ""),
-        })
-
-    return products
-
-
-def _build_catalog_context(products: list) -> str:
-    """
-    Builds a compact catalog string for the LLM prompt.
-    Groups products by category for easy reading.
-    """
-    by_category: dict = {}
-    for p in products:
-        cat = p["category"]
-        if cat not in by_category:
-            by_category[cat] = []
-        by_category[cat].append(p)
-
-    lines = ["AVAILABLE PRODUCTS CATALOG:"]
-    for cat, items in sorted(by_category.items()):
-        lines.append(f"\n[{cat.upper().replace('_', ' ')}]")
-        for p in items:
-            mats   = ", ".join(p["materials"][:3]) if p["materials"] else ""
-            cols   = ", ".join(p["colors"][:3])    if p["colors"]    else ""
-            styles = ", ".join(p["style_tags"][:2]) if p["style_tags"] else ""
-            desc   = p["description"][:80] if p["description"] else ""
-            lines.append(
-                f"  ID: {p['product_id']} | {p['name']} | ${p['price']}"
-                f" | {mats} | {cols} | {styles}"
-                + (f" | {desc}" if desc else "")
-            )
-
-    return "\n".join(lines)
+def _normalize_categories(concepts: list) -> list:
+    for c in concepts:
+        for item in c.get("required_items", []):
+            cat = item.get("category", "").lower().strip()
+            item["category"] = CATEGORY_MAP.get(cat, cat.replace(" ", "_"))
+    return concepts
 
 
 @retry(
@@ -124,54 +68,27 @@ def _build_catalog_context(products: list) -> str:
     retry=retry_if_exception_type(Exception),
     reraise=True
 )
-def _call_groq_planning(
-    room_analysis: dict,
-    budget: float,
-    style: str,
-    catalog_context: str
-) -> list:
-    """
-    Calls Groq Llama 3.1 8B with the real product catalog.
-    LLM selects specific products by ID instead of inventing style queries.
-    """
+def _call_groq_planning(room_analysis: dict, budget: float, style: str) -> list:
     groq_key = os.getenv("GROQ_API_KEY", "")
 
-    system_prompt = f"""You are an expert interior designer. You have access to a real product catalog.
-Your job is to create exactly 3 distinct design concepts by selecting REAL products from the catalog.
-
-{catalog_context}
-
-Generate exactly 3 distinct design concepts as a JSON array.
-Each concept MUST select 3-5 products from the catalog above using their exact product IDs.
+    system_prompt = """You are an expert interior designer. Generate exactly 3 distinct design concepts as a JSON array.
 Each concept must follow this schema exactly:
-{{
+{
   "concept_name": string,
   "style_tags": [string],
-  "color_palette": {{"primary": hex_color, "secondary": hex_color, "accent": hex_color}},
+  "color_palette": {"primary": hex_color, "secondary": hex_color, "accent": hex_color},
   "budget_total": number,
-  "budget_allocation": {{"seating": float, "tables": float, "textiles": float, "accessories": float}},
-  "selected_products": [
-    {{
-      "product_id": string,
-      "category": string,
-      "reason": string
-    }}
-  ]
-}}
-
-RULES:
-- Only use product IDs that exist in the catalog above
-- Select products that fit the room type, style and budget
-- Each concept must use different products (no repeats across concepts)
-- Total cost of selected products must not exceed the budget
-- Select products from different categories for variety
-- Return ONLY the JSON array. No markdown, no explanation, no code blocks."""
+  "budget_allocation": {"seating": float, "tables": float, "textiles": float, "accessories": float},
+  "required_items": [{"category": string, "max_width_inches": number_or_null, "style_query": string}]
+}
+Use ONLY these category values: sofa, coffee_table, rug, floor_lamp, accent_chair, throw_blanket, bookshelf, dining_table, bed_frame, side_table
+Return ONLY the JSON array. No markdown, no explanation, no code blocks."""
 
     user_prompt = (
         f"Room analysis: {json.dumps(room_analysis)}\n"
         f"Budget: ${budget}\n"
         f"Preferred style: {style}\n"
-        "Generate 3 distinct design concepts using real products from the catalog."
+        "Generate 3 distinct design concepts that fit this specific room."
     )
 
     resp = requests.post(
@@ -186,7 +103,7 @@ RULES:
                 {"role": "system", "content": system_prompt},
                 {"role": "user",   "content": user_prompt}
             ],
-            "max_tokens": 3000,
+            "max_tokens": 2000,
             "temperature": 0.7
         },
         timeout=30
@@ -197,7 +114,6 @@ RULES:
 
     raw = resp.json()['choices'][0]['message']['content'].strip()
 
-    # Strip markdown code blocks if present
     if raw.startswith("```"):
         raw = raw.split("```")[1]
         if raw.startswith("json"):
@@ -208,43 +124,16 @@ RULES:
     for c in concepts:
         c["budget_total"] = budget
 
-    return concepts
-
-
-def _convert_to_required_items(concepts: list, all_products: list) -> list:
-    """
-    Converts the new selected_products format into required_items format
-    so the rest of the pipeline (optimization, retrieval) works unchanged.
-    """
-    product_map = {p["product_id"]: p for p in all_products}
-
-    for concept in concepts:
-        selected = concept.get("selected_products", [])
-        required_items = []
-        for sel in selected:
-            pid  = sel.get("product_id", "")
-            prod = product_map.get(pid)
-            if prod:
-                required_items.append({
-                    "category":        prod["category"],
-                    "max_width_inches": prod["dimensions"].get("width"),
-                    "style_query":     prod["name"],
-                    "product_id":      pid,   # carry through for direct lookup
-                })
-        concept["required_items"] = required_items
-
-        # Clean up selected_products from concept to keep state lean
-        concept.pop("selected_products", None)
-
+    concepts = _normalize_categories(concepts)
     return concepts
 
 
 def planning_agent(state: AppState) -> AppState:
+    print(f"[DEBUG] use_real_api: {_use_real_api()}, GROQ_KEY: {bool(os.getenv('GROQ_API_KEY'))}")
     """
     Planning agent — generates 3 design concepts.
-    Catalog-grounded path: fetches real products from Pinecone, passes to Groq.
-    LLM selects specific products by ID — no more invented style queries.
-    Mock path: returns MOCK_DESIGN_CONCEPTS instantly (no API keys needed).
+    Real path: Groq designs freely, Pinecone finds closest products in retrieval.
+    Mock path: returns MOCK_DESIGN_CONCEPTS instantly.
     """
     room_analysis = state["room_analysis"]
     budget        = state["budget"]
@@ -268,52 +157,20 @@ def planning_agent(state: AppState) -> AppState:
                 data={"concept_name": c["concept_name"],
                       "style_tags": c["style_tags"]})
         state = log_stage_end(state, "planning")
-        return {
-            **state,
-            "design_concepts": concepts,
-            "budget_remaining": budget,
-            "error": None
-        }
+        return {**state, "design_concepts": concepts, "budget_remaining": budget, "error": None}
 
-    # ── Real API + Pinecone catalog ───────────────────────────────────────────
+    # ── Real API ──────────────────────────────────────────────────────────────
     try:
-        # Fetch catalog from Pinecone if available
-        all_products    = []
-        catalog_context = ""
-        if _use_pinecone():
-            state = log_event(state, "planning", "fetching_catalog",
-                "Fetching product catalog from Pinecone...",
-                data={"source": "pinecone"})
-            all_products    = _fetch_catalog_from_pinecone()
-            catalog_context = _build_catalog_context(all_products)
-            state = log_event(state, "planning", "catalog_fetched",
-                f"Fetched {len(all_products)} products from Pinecone",
-                level="success",
-                data={"product_count": len(all_products)})
-
-        concepts = _call_groq_planning(
-            room_analysis, budget, style, catalog_context
-        )
-
-        # Convert selected_products → required_items for downstream agents
-        if all_products:
-            concepts = _convert_to_required_items(concepts, all_products)
-
+        concepts = _call_groq_planning(room_analysis, budget, style)
         for c in concepts:
             state = log_event(state, "planning", "concept_created",
                 f"Design concept '{c['concept_name']}' created with "
-                f"{len(c.get('required_items', []))} items",
+                f"{len(c['required_items'])} items",
                 level="success",
                 data={"concept_name": c["concept_name"],
-                      "style_tags":   c.get("style_tags", [])})
-
+                      "style_tags": c["style_tags"]})
         state = log_stage_end(state, "planning")
-        return {
-            **state,
-            "design_concepts": concepts,
-            "budget_remaining": budget,
-            "error": None
-        }
+        return {**state, "design_concepts": concepts, "budget_remaining": budget, "error": None}
 
     except Exception as e:
         state = log_event(state, "planning", "api_failed",
