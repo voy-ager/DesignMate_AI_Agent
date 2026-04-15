@@ -1,0 +1,120 @@
+{
+  "sofa": [
+    "https://www.article.com/product/25356/ceni-83-sofa-quarry-gray",
+    "https://www.article.com/product/22739/timber-90-leather-sofa-charme-tan",
+    "https://www.article.com/product/27068/sven-88-tufted-sofa-fir-green",
+    "https://www.article.com/product/22570/timber-90-sofa-rain-cloud-gray",
+    "https://www.article.com/product/22920/sitka-99-sofa-quartz-white",
+    "https://www.article.com/product/24098/sven-88-tufted-leather-sofa-charme-chocolat",
+    "https://www.article.com/product/25355/ceni-83-sofa-hemlock-green",
+    "https://www.article.com/product/21195/anton-82-sofa-twilight-blue",
+    "https://www.article.com/product/28142/cigar-92-leather-sofa-indiana-brown",
+    "https://www.article.com/product/26162/beta-98-modular-sofa-cypress-green"
+  ],
+  "rug": [
+    "https://www.article.com/product/24491/arizona-8-x-10-rug",
+    "https://www.article.com/product/23754/hira-8-x-10-rug-natural-ivory",
+    "https://www.article.com/product/1834/texa-8-x-10-rug-vanilla-ivory",
+    "https://www.article.com/product/23255/elwood-8-x-10-performance-rug-warm-gray",
+    "https://www.article.com/product/23264/hobart-8-x-10-rug-cream-multi",
+    "https://www.article.com/product/24975/hurley-9-x-12-performance-rug-beige-fleck",
+    "https://www.article.com/product/25374/softi-8-x-10-rug-pumice-ivory",
+    "https://www.article.com/product/25964/aymer-8-x-10-rug-copper",
+    "https://www.article.com/product/27522/haren-8-x-10-rug-rust",
+    "https://www.article.com/product/25960/mattis-8-x-10-rug-diamond-multi"
+  ],
+  "floor_lamp": [
+    "https://www.article.com/product/13996/moon-floor-lamp-gold",
+    "https://www.article.com/product/12482/heron-floor-lamp-black",
+    "https://www.article.com/product/17790/arvo-floor-lamp-white",
+    "https://www.article.com/product/2168/leap-floor-lamp-black",
+    "https://www.article.com/product/21458/oslo-floor-lamp-gray",
+    "https://www.article.com/product/25289/pilar-floor-lamp-white-terrazzo",
+    "https://www.article.com/product/2139/barbell-floor-lamp-brass",
+    "https://www.article.com/product/3568/crescent-floor-lamp-black",
+    "https://www.article.com/product/13997/gira-floor-lamp-matte-black",
+    "https://www.article.com/product/23597/rye-floor-lamp-walnut"
+  ],
+  "accent_chair": [
+    "https://www.article.com/product/22842/regis-33-velvet-lounge-chair-cascadia-blue",
+    "https://www.article.com/product/25342/ceni-39-lounge-chair-denim-blue",
+    "https://www.article.com/product/21208/burrard-32-lounge-chair-seasalt-gray",
+    "https://www.article.com/product/25557/mod-35-lounge-chair-blue-berry",
+    "https://www.article.com/product/24373/gerven-office-chair-cobblestone-ivory",
+    "https://www.article.com/product/21475/gabriola-34-lounge-chair-ivory-boucle",
+    "https://www.article.com/product/24042/aquila-leather-office-chair-charme-tan",
+    "https://www.article.com/product/24358/nosh-dining-chair-walnut-and-chalk-gray",
+    "https://www.article.com/product/18041/svelti-office-chair-pure-black",
+    "https://www.article.com/product/21236/fonra-dining-chair-smoked-oak-and-santolina-gray"
+  ],
+  "bookshelf": [
+    "https://www.article.com/product/29193/merto-33-shelving-unit-with-storage-natural-oak",
+    "https://www.article.com/product/26991/heidi-21-modular-shelving-unit-narrow-walnut",
+    "https://www.article.com/product/29692/krossa-32-5-shelving-unit-tall-walnut",
+    "https://www.article.com/product/25676/fantol-51-5-shelving-unit-wide-natural-oak",
+    "https://www.article.com/product/18769/newberry-31-25-shelving-unit-wide-walnut",
+    "https://www.article.com/product/21760/caliper-47-shelving-unit-walnut",
+    "https://www.article.com/product/27554/zander-75-shelving-unit-walnut",
+    "https://www.article.com/product/27048/heidi-33-25-modular-shelving-unit-wide-walnut",
+    "https://www.article.com/product/23908/torme-34-bookcase-with-storage-tall-smoked-oak",
+    "https://www.article.com/product/27453/lilya-23-shelving-unit-narrow-white-oak"
+  ],
+  "coffee_table": [
+    "https://www.article.com/product/12662/mara-31-5-marble-coffee-table-walnut",
+    "https://www.article.com/product/12665/vena-43-5-marble-coffee-table-walnut",
+    "https://www.article.com/product/24200/amoeba-42-5-coffee-table-walnut",
+    "https://www.article.com/product/25371/lenia-46-storage-coffee-table-walnut",
+    "https://www.article.com/product/12664/clarus-31-5-glass-coffee-table-walnut",
+    "https://www.article.com/product/25789/adel-42-round-coffee-table-white-oak",
+    "https://www.article.com/product/28660/elise-43-outdoor-coffee-table-light-eucalyptus",
+    "https://www.article.com/product/24929/lloyd-54-coffee-table-warm-brown",
+    "https://www.article.com/product/27082/amoeba-35-5-round-coffee-table-black",
+    "https://www.article.com/product/24797/suri-44-square-coffee-table-white-oak"
+  ],
+  "throw_blanket": [
+    "https://www.article.com/product/19331/jadara-throw-peacock-blue",
+    "https://www.article.com/product/20039/fresno-cotton-gauze-throw-light-taupe",
+    "https://www.article.com/product/2019/lanna-2-x-6-sheepskin-throw-ivory",
+    "https://www.article.com/product/2016/lanna-2-x-3-sheepskin-throw-ivory",
+    "https://www.article.com/product/29910/galene-jacquard-cotton-throw-ivory-cream",
+    "https://www.article.com/product/19930/leni-queen-cotton-gauze-quilt-duo-taupe",
+    "https://www.article.com/product/29915/nordea-large-pillow-ivory",
+    "https://www.article.com/product/23134/bovi-9-x-12-rug-silver-gray",
+    "https://www.article.com/product/31565/vati-114-right-storage-sleeper-sectional-natural-oak-and-green-wool-boucle",
+    "https://www.article.com/product/21661/leni-standard-cotton-gauze-sham-set-duo-taupe"
+  ],
+  "dining_table": [
+    "https://www.article.com/product/28733/conan-75-oval-dining-table-walnut",
+    "https://www.article.com/product/15096/madera-86-125-solid-wood-extendable-dining-table-oak",
+    "https://www.article.com/product/27601/seno-86-5-dining-table-walnut",
+    "https://www.article.com/product/15102/madera-71-solid-wood-dining-table-oak",
+    "https://www.article.com/product/27685/seno-36-round-dining-table-oak",
+    "https://www.article.com/product/25776/heidi-48-67-75-extendable-round-dining-table-walnut",
+    "https://www.article.com/product/27598/seno-71-110-extendable-dining-table-oak",
+    "https://www.article.com/product/23394/adel-82-5-dining-table-smoked-oak",
+    "https://www.article.com/product/27599/seno-71-dining-table-walnut"
+  ],
+  "bed_frame": [
+    "https://www.article.com/product/25632/basi-king-bed-frame-walnut",
+    "https://www.article.com/product/25633/basi-king-bed-frame-oak",
+    "https://www.article.com/product/25445/basi-full-bed-frame-smoked-oak",
+    "https://www.article.com/product/25640/basi-full-bed-frame-walnut",
+    "https://www.article.com/product/21541/tessu-queen-low-profile-upholstered-bed-glaze-gray",
+    "https://www.article.com/product/22835/basi-twin-bed-frame-oak",
+    "https://www.article.com/product/25637/basi-queen-bed-frame-walnut",
+    "https://www.article.com/product/25639/basi-queen-bed-frame-white",
+    "https://www.article.com/product/25638/basi-queen-bed-frame-oak"
+  ],
+  "side_table": [
+    "https://www.article.com/product/23361/torme-c-side-table-white-oak",
+    "https://www.article.com/product/25653/tovi-side-table-black",
+    "https://www.article.com/product/25370/lenia-storage-side-table-walnut",
+    "https://www.article.com/product/19377/agotu-marble-side-table-walnut",
+    "https://www.article.com/product/24197/amoeba-side-table-white-oak",
+    "https://www.article.com/product/25403/skane-outdoor-side-table-green",
+    "https://www.article.com/product/15241/jeppa-side-table-walnut",
+    "https://www.article.com/product/27447/tala-travertine-side-table-walnut",
+    "https://www.article.com/product/19083/fortra-storage-side-table-white-oak",
+    "https://www.article.com/product/30094/tovi-side-table-smoked-oak"
+  ]
+}

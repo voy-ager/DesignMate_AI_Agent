@@ -2,43 +2,338 @@
   {
     "id": "sofa_25356",
     "category": "sofa",
-    "name": "Square up.",
+    "name": "Ceni 83 Sofa Quarry Gray",
     "price": 200.0,
     "dimensions": {
       "width": 82,
       "depth": 37,
       "height": 33
     },
-    "style_descriptor": "square up. sofa fabric white wood walnut clean modern",
+    "style_descriptor": "ceni 83 sofa quarry gray sofa fabric polyester wood white walnut gray blue clean modular modern pleasingly symmetrical, the ceni is for those who need things to be in order before they can relax. ",
+    "description": "Pleasingly symmetrical, the Ceni is for those who need things to be in order before they can relax. Spring and foam cushions make for a firm, yet supportive seat. Soft, lightly textured fabric makes for an easy place to lounge. See the Ceni Fresh White Sofa styled in real homes.",
+    "materials": [
+      "fabric",
+      "polyester",
+      "wood",
+      "walnut",
+      "silver"
+    ],
+    "colors": [
+      "white",
+      "walnut",
+      "gray",
+      "blue",
+      "green"
+    ],
+    "style_tags": [
+      "clean",
+      "modular",
+      "modern"
+    ],
     "purchase_url": "https://www.article.com/product/25356/ceni-83-sofa-quarry-gray",
     "in_stock": true
   },
   {
     "id": "sofa_22739",
     "category": "sofa",
-    "name": "The big mid-century modern softie.",
+    "name": "Timber 90 Leather Sofa Charme Tan",
     "price": 1799.0,
     "dimensions": {
       "width": 82,
       "depth": 37,
       "height": 33
     },
-    "style_descriptor": "the big mid-century modern softie. sofa leather tan wood oak mid-century modern cozy",
+    "style_descriptor": "timber 90 leather sofa charme tan sofa leather wood oak tan warm oak green mid-century modern cozy durable yet soft, sturdy yet comfortable, firm yet relaxed \u2014 our timber sofa truly has it all. have ",
+    "description": "Durable yet soft, sturdy yet comfortable, firm yet relaxed \u2014 our Timber Sofa truly has it all. Have a seat, this couch is the premier destination to take a load off. See the Timber Charme Tan Sofa styled in real homes.",
+    "materials": [
+      "leather",
+      "wood",
+      "oak",
+      "fabric",
+      "wool"
+    ],
+    "colors": [
+      "tan",
+      "warm",
+      "oak",
+      "green",
+      "black"
+    ],
+    "style_tags": [
+      "mid-century",
+      "modern",
+      "cozy",
+      "classic",
+      "modular"
+    ],
     "purchase_url": "https://www.article.com/product/22739/timber-90-leather-sofa-charme-tan",
     "in_stock": true
   },
   {
     "id": "sofa_27068",
     "category": "sofa",
-    "name": "Gold medal green.",
+    "name": "Sven 88 Tufted Sofa Fir Green",
     "price": 1299.0,
     "dimensions": {
       "width": 82,
       "depth": 37,
       "height": 33
     },
-    "style_descriptor": "gold medal green. sofa green gold fabric white cozy elegant classic",
+    "style_descriptor": "sven 88 tufted sofa fir green sofa gold polyester fabric green white ivory natural cozy elegant classic now available in a cozy fir green, the sven is ready to continue its reign as champion. best-in clas",
+    "description": "Now available in a cozy Fir Green, the Sven is ready to continue its reign as champion. Best-in class Pirelli webbing suspension: trusted by Formula 1 racing and our sofa designers.",
+    "materials": [
+      "gold",
+      "polyester",
+      "fabric",
+      "wool",
+      "boucle"
+    ],
+    "colors": [
+      "green",
+      "white",
+      "ivory",
+      "natural",
+      "oak"
+    ],
+    "style_tags": [
+      "cozy",
+      "elegant",
+      "classic",
+      "modular",
+      "modern"
+    ],
     "purchase_url": "https://www.article.com/product/27068/sven-88-tufted-sofa-fir-green",
+    "in_stock": true
+  },
+  {
+    "id": "sofa_22570",
+    "category": "sofa",
+    "name": "Timber 90 Sofa Rain Cloud Gray",
+    "price": 1299.0,
+    "dimensions": {
+      "width": 82,
+      "depth": 37,
+      "height": 33
+    },
+    "style_descriptor": "timber 90 sofa rain cloud gray sofa linen fabric polyester gray warm oak multi classic modular modern sturdy, relaxed, accommodating \u2014 everything you already love about our timber sofa, but upholstered ",
+    "description": "Sturdy, relaxed, accommodating \u2014 everything you already love about our Timber Sofa, but upholstered with a lightly-textured linen blend fabric. See the Timber Rain Cloud Gray Sofa styled in real homes.",
+    "materials": [
+      "linen",
+      "fabric",
+      "polyester",
+      "wood",
+      "oak"
+    ],
+    "colors": [
+      "gray",
+      "warm",
+      "oak",
+      "multi",
+      "green"
+    ],
+    "style_tags": [
+      "classic",
+      "modular",
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/22570/timber-90-sofa-rain-cloud-gray",
+    "in_stock": true
+  },
+  {
+    "id": "sofa_22920",
+    "category": "sofa",
+    "name": "Sitka 99 Sofa Quartz White",
+    "price": 1199.0,
+    "dimensions": {
+      "width": 82,
+      "depth": 37,
+      "height": 33
+    },
+    "style_descriptor": "sitka 99 sofa quartz white sofa linen fabric wool white green ivory natural modular modern the sitka is no nonsense: removable cushions for easy cleaning, high-resiliency foam cushions, cushy",
+    "description": "The Sitka is no nonsense: removable cushions for easy cleaning, high-resiliency foam cushions, cushy throw pillows included\u2026 this is the kind of sofa that comes into your life when you really need a break, and it gives it to you. See the Sitka Quartz White Sofa styled in real homes.",
+    "materials": [
+      "linen",
+      "fabric",
+      "wool",
+      "boucle",
+      "oak"
+    ],
+    "colors": [
+      "white",
+      "green",
+      "ivory",
+      "natural",
+      "oak"
+    ],
+    "style_tags": [
+      "modular",
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/22920/sitka-99-sofa-quartz-white",
+    "in_stock": true
+  },
+  {
+    "id": "sofa_24098",
+    "category": "sofa",
+    "name": "Sven 88 Tufted Leather Sofa Charme Chocolat",
+    "price": 1699.0,
+    "dimensions": {
+      "width": 82,
+      "depth": 37,
+      "height": 33
+    },
+    "style_descriptor": "sven 88 tufted leather sofa charme chocolat sofa leather marble oak tan brown green blue luxurious classic modular click, hold, and drag to rotate. see how real people style their article furniture.",
+    "description": "Click, hold, and drag to rotate. See how real people style their Article furniture.",
+    "materials": [
+      "leather",
+      "marble",
+      "oak",
+      "walnut",
+      "velvet"
+    ],
+    "colors": [
+      "tan",
+      "brown",
+      "green",
+      "blue",
+      "black"
+    ],
+    "style_tags": [
+      "luxurious",
+      "classic",
+      "modular",
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/24098/sven-88-tufted-leather-sofa-charme-chocolat",
+    "in_stock": true
+  },
+  {
+    "id": "sofa_25355",
+    "category": "sofa",
+    "name": "Ceni 83 Sofa Hemlock Green",
+    "price": 1099.0,
+    "dimensions": {
+      "width": 82,
+      "depth": 37,
+      "height": 33
+    },
+    "style_descriptor": "ceni 83 sofa hemlock green sofa fabric polyester wood white walnut green blue clean modular modern pleasingly symmetrical, the ceni is for those who need things to be in order before they can relax. ",
+    "description": "Pleasingly symmetrical, the Ceni is for those who need things to be in order before they can relax. Spring and foam cushions make for a firm, yet supportive seat. Soft, lightly textured fabric makes for an easy place to lounge. See the Ceni Fresh White Sofa styled in real homes.",
+    "materials": [
+      "fabric",
+      "polyester",
+      "wood",
+      "walnut",
+      "silver"
+    ],
+    "colors": [
+      "white",
+      "walnut",
+      "green",
+      "blue",
+      "gray"
+    ],
+    "style_tags": [
+      "clean",
+      "modular",
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/25355/ceni-83-sofa-hemlock-green",
+    "in_stock": true
+  },
+  {
+    "id": "sofa_21195",
+    "category": "sofa",
+    "name": "Anton 82 Sofa Twilight Blue",
+    "price": 1099.0,
+    "dimensions": {
+      "width": 82,
+      "depth": 37,
+      "height": 33
+    },
+    "style_descriptor": "anton 82 sofa twilight blue sofa boucle blue green ivory white modular modern clean see how real people style their article furniture. we really like this sofa. the design is modern an",
+    "description": "See how real people style their Article furniture. We really like this sofa. The design is modern and clean, and the blue color looks even better in person\u2014it fits perfectly with our space. It feels sturdy and w... More",
+    "materials": [
+      "boucle"
+    ],
+    "colors": [
+      "blue",
+      "green",
+      "ivory",
+      "white",
+      "rust"
+    ],
+    "style_tags": [
+      "modular",
+      "modern",
+      "clean"
+    ],
+    "purchase_url": "https://www.article.com/product/21195/anton-82-sofa-twilight-blue",
+    "in_stock": true
+  },
+  {
+    "id": "sofa_28142",
+    "category": "sofa",
+    "name": "Cigar 92 Leather Sofa Indiana Brown",
+    "price": 2298.0,
+    "dimensions": {
+      "width": 82,
+      "depth": 37,
+      "height": 33
+    },
+    "style_descriptor": "cigar 92 leather sofa indiana brown sofa leather velvet wool green black white ivory classic modular modern see how real people style their article furniture. looks and smells incredible. it\u2019s a low profile. ",
+    "description": "See how real people style their Article furniture. Looks and smells incredible. It\u2019s a LOW profile. I realized that going in and even bought the matching loveseat and ottoman but it really is the only thing tha... More",
+    "materials": [
+      "leather",
+      "velvet",
+      "wool",
+      "boucle"
+    ],
+    "colors": [
+      "green",
+      "black",
+      "white",
+      "ivory",
+      "rust"
+    ],
+    "style_tags": [
+      "classic",
+      "modular",
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/28142/cigar-92-leather-sofa-indiana-brown",
+    "in_stock": true
+  },
+  {
+    "id": "sofa_26162",
+    "category": "sofa",
+    "name": "Beta 98 Modular Sofa Cypress Green",
+    "price": 1349.0,
+    "dimensions": {
+      "width": 82,
+      "depth": 37,
+      "height": 33
+    },
+    "style_descriptor": "beta 98 modular sofa cypress green sofa wool boucle oak green white gray ivory modular modern see how real people style their article furniture. our house is full of article items and this time ",
+    "description": "See how real people style their Article furniture. Our house is full of Article items and this time too you guys have outdone yourselves. The quality is excellent. I don't think your website photos do justice to... More",
+    "materials": [
+      "wool",
+      "boucle",
+      "oak",
+      "silver"
+    ],
+    "colors": [
+      "green",
+      "white",
+      "gray",
+      "ivory",
+      "natural"
+    ],
+    "style_tags": [
+      "modular",
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/26162/beta-98-modular-sofa-cypress-green",
     "in_stock": true
   },
   {
@@ -51,7 +346,22 @@
       "depth": 120,
       "height": 0
     },
-    "style_descriptor": "arizona 8 x 10 rug rug wool ivory natural brown traditional modern",
+    "style_descriptor": "arizona 8 x 10 rug rug wool ivory natural brown cream traditional modern see how real people style their article furniture. this rug is so nice! we love the color tones and ",
+    "description": "See how real people style their Article furniture. This rug is so nice! We love the color tones and the variation in color is so pretty. The quality is also very great. We haven\u2019t had any issues with piling or t... More",
+    "materials": [
+      "wool"
+    ],
+    "colors": [
+      "ivory",
+      "natural",
+      "brown",
+      "cream",
+      "blue"
+    ],
+    "style_tags": [
+      "traditional",
+      "modern"
+    ],
     "purchase_url": "https://www.article.com/product/24491/arizona-8-x-10-rug",
     "in_stock": true
   },
@@ -65,7 +375,23 @@
       "depth": 120,
       "height": 0
     },
-    "style_descriptor": "hira 8 x 10 rug natural ivory rug natural ivory metal gray traditional modern",
+    "style_descriptor": "hira 8 x 10 rug natural ivory rug metal wool natural ivory gray brown traditional modern see how real people style their article furniture. listen, if you're buying a rug you need a rug pad",
+    "description": "See how real people style their Article furniture. Listen, if you're buying a rug you need a rug pad. You do! Thankfully, our Stein rug pads are actually worth the money: thick, cushy, and with an anti-slip coating, they keep your rug in place and actually improve the sitting/walking/laying down experience. The security of the Stein plus the the chun",
+    "materials": [
+      "metal",
+      "wool"
+    ],
+    "colors": [
+      "natural",
+      "ivory",
+      "gray",
+      "brown",
+      "cream"
+    ],
+    "style_tags": [
+      "traditional",
+      "modern"
+    ],
     "purchase_url": "https://www.article.com/product/23754/hira-8-x-10-rug-natural-ivory",
     "in_stock": true
   },
@@ -79,8 +405,230 @@
       "depth": 120,
       "height": 0
     },
-    "style_descriptor": "texa 8 x 10 rug vanilla ivory rug ivory gray green wool traditional modern",
+    "style_descriptor": "texa 8 x 10 rug vanilla ivory rug wool ivory gray green natural traditional luxurious modern see how real people style their article furniture. this is a beautiful rug. comfortable too.",
+    "description": "See how real people style their Article furniture. This is a beautiful rug. Comfortable too.",
+    "materials": [
+      "wool"
+    ],
+    "colors": [
+      "ivory",
+      "gray",
+      "green",
+      "natural",
+      "brown"
+    ],
+    "style_tags": [
+      "traditional",
+      "luxurious",
+      "modern"
+    ],
     "purchase_url": "https://www.article.com/product/1834/texa-8-x-10-rug-vanilla-ivory",
+    "in_stock": true
+  },
+  {
+    "id": "rug_23255",
+    "category": "rug",
+    "name": "Elwood 8 X 10 Performance Rug Warm Gray",
+    "price": 1128.0,
+    "dimensions": {
+      "width": 96,
+      "depth": 120,
+      "height": 0
+    },
+    "style_descriptor": "elwood 8 x 10 performance rug warm gray rug wool ivory natural brown cream traditional cozy modern see how real people style their article furniture. me (and my dogs) love this rug. we got it because",
+    "description": "See how real people style their Article furniture. Me (and my dogs) love this rug. We got it because it was a \"performance\" rug and it totally lives up to it. We wanted a rug that was not only beautiful but also... More",
+    "materials": [
+      "wool"
+    ],
+    "colors": [
+      "ivory",
+      "natural",
+      "brown",
+      "cream",
+      "blue"
+    ],
+    "style_tags": [
+      "traditional",
+      "cozy",
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/23255/elwood-8-x-10-performance-rug-warm-gray",
+    "in_stock": true
+  },
+  {
+    "id": "rug_23264",
+    "category": "rug",
+    "name": "Hobart 8 X 10 Rug Cream Multi",
+    "price": 1128.0,
+    "dimensions": {
+      "width": 96,
+      "depth": 120,
+      "height": 0
+    },
+    "style_descriptor": "hobart 8 x 10 rug cream multi rug wool cotton polyester cream multi ivory natural traditional modern see how real people style their article furniture. the perfect neutral rug that literally goes with ",
+    "description": "See how real people style their Article furniture. The perfect neutral rug that literally goes with everything! I wanted something that was neutral but not white as I have kids and need some pattern in there to ... More",
+    "materials": [
+      "wool",
+      "cotton",
+      "polyester"
+    ],
+    "colors": [
+      "cream",
+      "multi",
+      "ivory",
+      "natural",
+      "brown"
+    ],
+    "style_tags": [
+      "traditional",
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/23264/hobart-8-x-10-rug-cream-multi",
+    "in_stock": true
+  },
+  {
+    "id": "rug_24975",
+    "category": "rug",
+    "name": "Hurley 9 X 12 Performance Rug Beige Fleck",
+    "price": 1128.0,
+    "dimensions": {
+      "width": 96,
+      "depth": 120,
+      "height": 0
+    },
+    "style_descriptor": "hurley 9 x 12 performance rug beige fleck rug wool beige ivory natural brown traditional modern see how real people style their article furniture. this rug is so universal and fits in literally an",
+    "description": "See how real people style their Article furniture. This rug is so universal and fits in literally any space. Ive had it in multiple rooms in my home and it looks fantastic in all of them. The quality is fantasti... More",
+    "materials": [
+      "wool"
+    ],
+    "colors": [
+      "beige",
+      "ivory",
+      "natural",
+      "brown",
+      "cream"
+    ],
+    "style_tags": [
+      "traditional",
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/24975/hurley-9-x-12-performance-rug-beige-fleck",
+    "in_stock": true
+  },
+  {
+    "id": "rug_25374",
+    "category": "rug",
+    "name": "Softi 8 X 10 Rug Pumice Ivory",
+    "price": 1128.0,
+    "dimensions": {
+      "width": 96,
+      "depth": 120,
+      "height": 0
+    },
+    "style_descriptor": "softi 8 x 10 rug pumice ivory rug wool ivory natural brown cream traditional modern see how real people style their article furniture. the softest rug ever\u2014like walking on a cloud! \u2601\ufe0f\u2728",
+    "description": "See how real people style their Article furniture. The softest rug ever\u2014like walking on a cloud! \u2601\ufe0f\u2728 With its plush texture and beautiful creamy white color, it adds instant warmth and luxury to any space. The p... More",
+    "materials": [
+      "wool"
+    ],
+    "colors": [
+      "ivory",
+      "natural",
+      "brown",
+      "cream",
+      "blue"
+    ],
+    "style_tags": [
+      "traditional",
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/25374/softi-8-x-10-rug-pumice-ivory",
+    "in_stock": true
+  },
+  {
+    "id": "rug_25964",
+    "category": "rug",
+    "name": "Aymer 8 X 10 Rug Copper",
+    "price": 1128.0,
+    "dimensions": {
+      "width": 96,
+      "depth": 120,
+      "height": 0
+    },
+    "style_descriptor": "aymer 8 x 10 rug copper rug wool copper ivory natural brown traditional modern see how real people style their article furniture. truly beautiful rug! the quality and design is to",
+    "description": "See how real people style their Article furniture. Truly beautiful rug! The quality and design is top quality. While the colors are darker than in the photos, they are still warm and bright.",
+    "materials": [
+      "wool"
+    ],
+    "colors": [
+      "copper",
+      "ivory",
+      "natural",
+      "brown",
+      "cream"
+    ],
+    "style_tags": [
+      "traditional",
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/25964/aymer-8-x-10-rug-copper",
+    "in_stock": true
+  },
+  {
+    "id": "rug_27522",
+    "category": "rug",
+    "name": "Haren 8 X 10 Rug Rust",
+    "price": 1128.0,
+    "dimensions": {
+      "width": 96,
+      "depth": 120,
+      "height": 0
+    },
+    "style_descriptor": "haren 8 x 10 rug rust rug wool rust ivory natural brown traditional modern obsessed with the haren rug in rust! it has a really nice warm tone that makes the space feel cozier",
+    "description": "Obsessed with the Haren Rug in Rust! It has a really nice warm tone that makes the space feel cozier without being too bold, and the pattern is subtle but still... More Our promise? High-quality furniture at radically lower (and much fairer) prices than comparable retailers.",
+    "materials": [
+      "wool"
+    ],
+    "colors": [
+      "rust",
+      "ivory",
+      "natural",
+      "brown",
+      "cream"
+    ],
+    "style_tags": [
+      "traditional",
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/27522/haren-8-x-10-rug-rust",
+    "in_stock": true
+  },
+  {
+    "id": "rug_25960",
+    "category": "rug",
+    "name": "Mattis 8 X 10 Rug Diamond Multi",
+    "price": 1128.0,
+    "dimensions": {
+      "width": 96,
+      "depth": 120,
+      "height": 0
+    },
+    "style_descriptor": "mattis 8 x 10 rug diamond multi rug wool multi ivory natural brown traditional modern see how real people style their article furniture. finally \u2014 a rug for my daughter's room! we have c",
+    "description": "See how real people style their Article furniture. Finally \u2014 a rug for my daughter's room! We have cold concrete throughout our house (great for cleaning, but not the coziest), so I was on the hunt for something... More",
+    "materials": [
+      "wool"
+    ],
+    "colors": [
+      "multi",
+      "ivory",
+      "natural",
+      "brown",
+      "cream"
+    ],
+    "style_tags": [
+      "traditional",
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/25960/mattis-8-x-10-rug-diamond-multi",
     "in_stock": true
   },
   {
@@ -93,7 +641,25 @@
       "depth": 11,
       "height": 70
     },
-    "style_descriptor": "moon floor lamp gold floor lamp gold black white linen elegant modern",
+    "style_descriptor": "moon floor lamp gold floor lamp gold linen brass black white walnut multi elegant modern see how real people style their article furniture. it\u2019s a beautiful lamp. exactly what i was looking",
+    "description": "See how real people style their Article furniture. It\u2019s a beautiful lamp. Exactly what I was looking for.",
+    "materials": [
+      "gold",
+      "linen",
+      "brass",
+      "walnut"
+    ],
+    "colors": [
+      "black",
+      "white",
+      "walnut",
+      "multi",
+      "dark"
+    ],
+    "style_tags": [
+      "elegant",
+      "modern"
+    ],
     "purchase_url": "https://www.article.com/product/13996/moon-floor-lamp-gold",
     "in_stock": true
   },
@@ -107,7 +673,24 @@
       "depth": 11,
       "height": 70
     },
-    "style_descriptor": "heron floor lamp black floor lamp black white linen brass mid-century modern",
+    "style_descriptor": "heron floor lamp black floor lamp linen brass walnut black white walnut multi mid-century modern see how real people style their article furniture. i am in love with this lamp. it\u2019s perfect for my ",
+    "description": "See how real people style their Article furniture. I am in LOVE with this lamp. it\u2019s perfect for my space and glad i made the right decision to incorporate into my living room as I am slowly deciding pieces for ... More",
+    "materials": [
+      "linen",
+      "brass",
+      "walnut"
+    ],
+    "colors": [
+      "black",
+      "white",
+      "walnut",
+      "multi",
+      "light"
+    ],
+    "style_tags": [
+      "mid-century",
+      "modern"
+    ],
     "purchase_url": "https://www.article.com/product/12482/heron-floor-lamp-black",
     "in_stock": true
   },
@@ -121,8 +704,329 @@
       "depth": 11,
       "height": 70
     },
-    "style_descriptor": "arvo floor lamp white floor lamp black light wood fabric modern",
+    "style_descriptor": "arvo floor lamp white floor lamp marble wood fabric black light modern see how real people style their article furniture. excellent quality and sturdy as already tested by",
+    "description": "See how real people style their Article furniture. Excellent quality and sturdy as already tested by a 5 and 2 year old swinging around it. Quick and easy to assemble and nice light level and colour with supplie... More",
+    "materials": [
+      "marble",
+      "wood",
+      "fabric"
+    ],
+    "colors": [
+      "black",
+      "light"
+    ],
+    "style_tags": [
+      "modern"
+    ],
     "purchase_url": "https://www.article.com/product/17790/arvo-floor-lamp-white",
+    "in_stock": true
+  },
+  {
+    "id": "floor_lamp_2168",
+    "category": "floor_lamp",
+    "name": "Leap Floor Lamp Black",
+    "price": 129.0,
+    "dimensions": {
+      "width": 11,
+      "depth": 11,
+      "height": 70
+    },
+    "style_descriptor": "leap floor lamp black floor lamp linen brass walnut black white walnut multi modern see how real people style their article furniture. looks perfect in my living room",
+    "description": "See how real people style their Article furniture. Looks perfect in my living room",
+    "materials": [
+      "linen",
+      "brass",
+      "walnut"
+    ],
+    "colors": [
+      "black",
+      "white",
+      "walnut",
+      "multi",
+      "copper"
+    ],
+    "style_tags": [
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/2168/leap-floor-lamp-black",
+    "in_stock": true
+  },
+  {
+    "id": "floor_lamp_21458",
+    "category": "floor_lamp",
+    "name": "Oslo Floor Lamp Gray",
+    "price": 129.0,
+    "dimensions": {
+      "width": 11,
+      "depth": 11,
+      "height": 70
+    },
+    "style_descriptor": "oslo floor lamp gray floor lamp linen brass walnut gray black white walnut cozy modern see how real people style their article furniture. i love this lamp! it creates a warm and inviting ",
+    "description": "See how real people style their Article furniture. I love this lamp! It creates a warm and inviting nook in my apartment. Also the customer service is top notch. I wanted to change my color choice and all it too... More",
+    "materials": [
+      "linen",
+      "brass",
+      "walnut"
+    ],
+    "colors": [
+      "gray",
+      "black",
+      "white",
+      "walnut",
+      "multi"
+    ],
+    "style_tags": [
+      "cozy",
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/21458/oslo-floor-lamp-gray",
+    "in_stock": true
+  },
+  {
+    "id": "floor_lamp_25289",
+    "category": "floor_lamp",
+    "name": "Pilar Floor Lamp White Terrazzo",
+    "price": 129.0,
+    "dimensions": {
+      "width": 11,
+      "depth": 11,
+      "height": 70
+    },
+    "style_descriptor": "pilar floor lamp white terrazzo floor lamp linen brass walnut white black walnut multi modern see how real people style their article furniture. great quality, super heavy and sturdy. also so be",
+    "description": "See how real people style their Article furniture. Great quality, super heavy and sturdy. Also so beautiful",
+    "materials": [
+      "linen",
+      "brass",
+      "walnut"
+    ],
+    "colors": [
+      "white",
+      "black",
+      "walnut",
+      "multi"
+    ],
+    "style_tags": [
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/25289/pilar-floor-lamp-white-terrazzo",
+    "in_stock": true
+  },
+  {
+    "id": "floor_lamp_2139",
+    "category": "floor_lamp",
+    "name": "Barbell Floor Lamp Brass",
+    "price": 129.0,
+    "dimensions": {
+      "width": 11,
+      "depth": 11,
+      "height": 70
+    },
+    "style_descriptor": "barbell floor lamp brass floor lamp brass linen walnut black white walnut multi elegant modern see how real people style their article furniture. love the design and it brightened up a corner in ",
+    "description": "See how real people style their Article furniture. Love the design and it brightened up a corner in my living room. We have no overhead lights and use only lamps so it's perfect.",
+    "materials": [
+      "brass",
+      "linen",
+      "walnut"
+    ],
+    "colors": [
+      "black",
+      "white",
+      "walnut",
+      "multi",
+      "light"
+    ],
+    "style_tags": [
+      "elegant",
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/2139/barbell-floor-lamp-brass",
+    "in_stock": true
+  },
+  {
+    "id": "floor_lamp_3568",
+    "category": "floor_lamp",
+    "name": "Crescent Floor Lamp Black",
+    "price": 129.0,
+    "dimensions": {
+      "width": 11,
+      "depth": 11,
+      "height": 70
+    },
+    "style_descriptor": "crescent floor lamp black floor lamp linen brass walnut black white walnut multi modern see how real people style their article furniture. i really like the style of the lamp. it is well m",
+    "description": "See how real people style their Article furniture. I really like the style of the lamp. It is well made and has a nice glow when it's on.",
+    "materials": [
+      "linen",
+      "brass",
+      "walnut"
+    ],
+    "colors": [
+      "black",
+      "white",
+      "walnut",
+      "multi"
+    ],
+    "style_tags": [
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/3568/crescent-floor-lamp-black",
+    "in_stock": true
+  },
+  {
+    "id": "floor_lamp_13997",
+    "category": "floor_lamp",
+    "name": "Gira Floor Lamp Matte Black",
+    "price": 129.0,
+    "dimensions": {
+      "width": 11,
+      "depth": 11,
+      "height": 70
+    },
+    "style_descriptor": "gira floor lamp matte black floor lamp linen brass walnut black white walnut multi modern see how real people style their article furniture. great product, exactly what we were looking for!",
+    "description": "See how real people style their Article furniture. Great product, exactly what we were looking for!",
+    "materials": [
+      "linen",
+      "brass",
+      "walnut"
+    ],
+    "colors": [
+      "black",
+      "white",
+      "walnut",
+      "multi"
+    ],
+    "style_tags": [
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/13997/gira-floor-lamp-matte-black",
+    "in_stock": true
+  },
+  {
+    "id": "floor_lamp_23597",
+    "category": "floor_lamp",
+    "name": "Rye Floor Lamp Walnut",
+    "price": 129.0,
+    "dimensions": {
+      "width": 11,
+      "depth": 11,
+      "height": 70
+    },
+    "style_descriptor": "rye floor lamp walnut floor lamp walnut linen brass walnut black white multi modern see how real people style their article furniture. just as pictured - beautiful and high quality",
+    "description": "See how real people style their Article furniture. Just as pictured - beautiful and high quality",
+    "materials": [
+      "walnut",
+      "linen",
+      "brass",
+      "wood",
+      "silver"
+    ],
+    "colors": [
+      "walnut",
+      "black",
+      "white",
+      "multi"
+    ],
+    "style_tags": [
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/23597/rye-floor-lamp-walnut",
+    "in_stock": true
+  },
+  {
+    "id": "accent_chair_22842",
+    "category": "accent_chair",
+    "name": "Regis 33 Velvet Lounge Chair Cascadia Blue",
+    "price": 499.0,
+    "dimensions": {
+      "width": 28,
+      "depth": 30,
+      "height": 32
+    },
+    "style_descriptor": "regis 33 velvet lounge chair cascadia blue accent chair velvet boucle leather blue ivory black walnut scandinavian luxurious modern see how real people style their article furniture. i absolutely love this chair. firm but comfy, i\u2019m",
+    "description": "See how real people style their Article furniture. I absolutely love this chair. Firm but comfy, I\u2019m going to buy one more so I have a set.",
+    "materials": [
+      "velvet",
+      "boucle",
+      "leather",
+      "walnut",
+      "gold"
+    ],
+    "colors": [
+      "blue",
+      "ivory",
+      "black",
+      "walnut",
+      "white"
+    ],
+    "style_tags": [
+      "scandinavian",
+      "luxurious",
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/22842/regis-33-velvet-lounge-chair-cascadia-blue",
+    "in_stock": true
+  },
+  {
+    "id": "accent_chair_25342",
+    "category": "accent_chair",
+    "name": "Ceni 39 Lounge Chair Denim Blue",
+    "price": 250.0,
+    "dimensions": {
+      "width": 28,
+      "depth": 30,
+      "height": 32
+    },
+    "style_descriptor": "ceni 39 lounge chair denim blue accent chair wood boucle leather ivory green blue gray contemporary scandinavian modern see how real people style their article furniture. take a load off. intentionally designed to sit lo",
+    "description": "See how real people style their Article furniture. Take a load off. Intentionally designed to sit low to the ground, our Ceni pieces are a contemporary take on a vintage silhouette. Designed with loose cushions, track arm rests, and a solid wood base, the Ceni features a firmly padded back cushion and medium-firm seat composed of sinuous springs and",
+    "materials": [
+      "wood",
+      "boucle",
+      "leather",
+      "walnut"
+    ],
+    "colors": [
+      "ivory",
+      "green",
+      "blue",
+      "gray",
+      "black"
+    ],
+    "style_tags": [
+      "contemporary",
+      "scandinavian",
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/25342/ceni-39-lounge-chair-denim-blue",
+    "in_stock": true
+  },
+  {
+    "id": "accent_chair_21208",
+    "category": "accent_chair",
+    "name": "Burrard 32 Lounge Chair Seasalt Gray",
+    "price": 499.0,
+    "dimensions": {
+      "width": 28,
+      "depth": 30,
+      "height": 32
+    },
+    "style_descriptor": "burrard 32 lounge chair seasalt gray accent chair boucle leather walnut gray ivory black walnut scandinavian modern see how real people style their article furniture. perfect. could be a little squishier",
+    "description": "See how real people style their Article furniture. Perfect. Could be a little squishier",
+    "materials": [
+      "boucle",
+      "leather",
+      "walnut"
+    ],
+    "colors": [
+      "gray",
+      "ivory",
+      "black",
+      "walnut",
+      "white"
+    ],
+    "style_tags": [
+      "scandinavian",
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/21208/burrard-32-lounge-chair-seasalt-gray",
     "in_stock": true
   },
   {
@@ -135,64 +1039,279 @@
       "depth": 30,
       "height": 32
     },
-    "style_descriptor": "mod 35 lounge chair blue berry accent chair blue ivory leather black scandinavian transitional modern",
+    "style_descriptor": "mod 35 lounge chair blue berry accent chair boucle leather walnut blue ivory black walnut scandinavian transitional modern see how real people style their article furniture. i love everything about this chair, from the size",
+    "description": "See how real people style their Article furniture. I love everything about this chair, from the size and fabric to the shape and overall comfort. It feels like a great big hug when you sit in it. My grandson fee... More",
+    "materials": [
+      "boucle",
+      "leather",
+      "walnut",
+      "fabric"
+    ],
+    "colors": [
+      "blue",
+      "ivory",
+      "black",
+      "walnut",
+      "white"
+    ],
+    "style_tags": [
+      "scandinavian",
+      "transitional",
+      "modern"
+    ],
     "purchase_url": "https://www.article.com/product/25557/mod-35-lounge-chair-blue-berry",
     "in_stock": true
   },
   {
-    "id": "accent_chair_26648",
+    "id": "accent_chair_24373",
     "category": "accent_chair",
-    "name": "Riley 42 Grand Swivel Chair Napa Charcoal",
-    "price": 699.0,
+    "name": "Gerven Office Chair Cobblestone Ivory",
+    "price": 899.0,
     "dimensions": {
       "width": 28,
       "depth": 30,
       "height": 32
     },
-    "style_descriptor": "riley 42 grand swivel chair napa charcoal accent chair ivory wool silver white modern",
-    "purchase_url": "https://www.article.com/product/26648/riley-42-grand-swivel-chair-napa-charcoal",
+    "style_descriptor": "gerven office chair cobblestone ivory accent chair walnut oak wool ivory walnut white oak modern see how real people style their article furniture. we don't mean to brag, but this bundle is kind of",
+    "description": "See how real people style their Article furniture. We don't mean to brag, but this bundle is kind of a big deal. Packed with tons of storage, the Krossa Desk, paired with the super comfortable Gerven Office Chair, is the set-up you need to get sh\\*t done. So, go ahead. Get out there and close some deals.",
+    "materials": [
+      "walnut",
+      "oak",
+      "wool",
+      "boucle",
+      "leather"
+    ],
+    "colors": [
+      "ivory",
+      "walnut",
+      "white",
+      "oak",
+      "gray"
+    ],
+    "style_tags": [
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/24373/gerven-office-chair-cobblestone-ivory",
     "in_stock": true
   },
   {
-    "id": "accent_chair_27028",
+    "id": "accent_chair_21475",
     "category": "accent_chair",
-    "name": "Everse 33 5 Velvet Lounge Chair Melange Espresso",
+    "name": "Gabriola 34 Lounge Chair Ivory Boucle",
+    "price": 1799.0,
+    "dimensions": {
+      "width": 28,
+      "depth": 30,
+      "height": 32
+    },
+    "style_descriptor": "gabriola 34 lounge chair ivory boucle accent chair boucle leather fabric ivory tan green black cozy scandinavian modern see how real people style their article furniture. you deserve the best of the best. and by the best",
+    "description": "See how real people style their Article furniture. You deserve the best of the best. And by the best, we mean buttery-soft leather and soft boucl\u00e9 fabric so cozy they\u2019ll keep your guests comfortably chatting well into the evening \u2014 even while the game is on. Textured, comfy, and inviting, there's a reason why the Timber and Gabriola are classics \u2014 th",
+    "materials": [
+      "boucle",
+      "leather",
+      "fabric",
+      "wool",
+      "walnut"
+    ],
+    "colors": [
+      "ivory",
+      "tan",
+      "green",
+      "black",
+      "gray"
+    ],
+    "style_tags": [
+      "cozy",
+      "scandinavian",
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/21475/gabriola-34-lounge-chair-ivory-boucle",
+    "in_stock": true
+  },
+  {
+    "id": "accent_chair_24042",
+    "category": "accent_chair",
+    "name": "Aquila Leather Office Chair Charme Tan",
     "price": 499.0,
     "dimensions": {
       "width": 28,
       "depth": 30,
       "height": 32
     },
-    "style_descriptor": "everse 33 5 velvet lounge chair melange espresso accent chair velvet ivory leather black scandinavian modern",
-    "purchase_url": "https://www.article.com/product/27028/everse-33-5-velvet-lounge-chair-melange-espresso",
+    "style_descriptor": "aquila leather office chair charme tan accent chair wool boucle leather ivory black walnut oak modern see how real people style their article furniture. beautiful chairs! i love the softness of the colo",
+    "description": "See how real people style their Article furniture. Beautiful chairs! I love the softness of the color of the leather and the wood is a perfect color. It\u2019s not too golden.",
+    "materials": [
+      "wool",
+      "boucle",
+      "leather",
+      "walnut",
+      "oak"
+    ],
+    "colors": [
+      "ivory",
+      "black",
+      "walnut",
+      "oak",
+      "tan"
+    ],
+    "style_tags": [
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/24042/aquila-leather-office-chair-charme-tan",
     "in_stock": true
   },
   {
-    "id": "bookshelf_25676",
+    "id": "accent_chair_24358",
+    "category": "accent_chair",
+    "name": "Nosh Dining Chair Walnut And Chalk Gray",
+    "price": 298.0,
+    "dimensions": {
+      "width": 28,
+      "depth": 30,
+      "height": 32
+    },
+    "style_descriptor": "nosh dining chair walnut and chalk gray accent chair walnut wood oak walnut gray oak green modern classic mid-century see how real people style their article furniture. bring parisian flair to your space with the nosh ",
+    "description": "See how real people style their Article furniture. Bring Parisian flair to your space with the Nosh Dining Chair x Odie Caf\u00e9 Table Bundle\u2014a modern take on the classic French bistro, infused with mid-century charm. Nosh\u2019s tapered legs, soft textured upholstery, and solid wood construction pair seamlessly with Odie\u2019s sturdy pedestal base and elegantly",
+    "materials": [
+      "walnut",
+      "wood",
+      "oak",
+      "leather",
+      "wool"
+    ],
+    "colors": [
+      "walnut",
+      "gray",
+      "oak",
+      "green",
+      "blue"
+    ],
+    "style_tags": [
+      "modern",
+      "classic",
+      "mid-century"
+    ],
+    "purchase_url": "https://www.article.com/product/24358/nosh-dining-chair-walnut-and-chalk-gray",
+    "in_stock": true
+  },
+  {
+    "id": "accent_chair_18041",
+    "category": "accent_chair",
+    "name": "Svelti Office Chair Pure Black",
+    "price": 449.0,
+    "dimensions": {
+      "width": 28,
+      "depth": 30,
+      "height": 32
+    },
+    "style_descriptor": "svelti office chair pure black accent chair oak wool boucle black natural oak white modern see how real people style their article furniture. hybrid work has its pros and cons. pros: sweatpan",
+    "description": "See how real people style their Article furniture. Hybrid work has its pros and cons. Pros: sweatpants. Cons: investing in a home office. Luckily, this bundle takes care of the latter. The Fantol Desk is cute, spacious, and compact enough for tight spaces. Feeling stressed mid-workday? Studies show that if you wheel your Svelti Office Chair into the",
+    "materials": [
+      "oak",
+      "wool",
+      "boucle",
+      "leather",
+      "walnut"
+    ],
+    "colors": [
+      "black",
+      "natural",
+      "oak",
+      "white",
+      "green"
+    ],
+    "style_tags": [
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/18041/svelti-office-chair-pure-black",
+    "in_stock": true
+  },
+  {
+    "id": "accent_chair_21236",
+    "category": "accent_chair",
+    "name": "Fonra Dining Chair Smoked Oak And Santolina Gray",
+    "price": 699.0,
+    "dimensions": {
+      "width": 28,
+      "depth": 30,
+      "height": 32
+    },
+    "style_descriptor": "fonra dining chair smoked oak and santolina gray accent chair oak wood walnut oak gray light walnut modern see how real people style their article furniture. when we say \"keep it light\" this is what we mean:",
+    "description": "See how real people style their Article furniture. When we say \"keep it light\" this is what we mean: the Emmer and the Fonra, together in your dining space. Both built from solid wood, this table-and-chairs set works beautifully together because they establish a nice foundation for dinner without adding a lot of visual weight.",
+    "materials": [
+      "oak",
+      "wood",
+      "walnut",
+      "leather",
+      "boucle"
+    ],
+    "colors": [
+      "oak",
+      "gray",
+      "light",
+      "walnut",
+      "green"
+    ],
+    "style_tags": [
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/21236/fonra-dining-chair-smoked-oak-and-santolina-gray",
+    "in_stock": true
+  },
+  {
+    "id": "bookshelf_29193",
     "category": "bookshelf",
-    "name": "Fantol 51 5 Shelving Unit Wide Natural Oak",
+    "name": "Merto 33 Shelving Unit With Storage Natural Oak",
+    "price": 699.0,
+    "dimensions": {
+      "width": 31,
+      "depth": 15,
+      "height": 79
+    },
+    "style_descriptor": "merto 33 shelving unit with storage natural oak bookshelf oak natural oak modern sale](https://www.article.com/product/29771/merto-138-media-storage-set-natural-oak) beautiful books",
+    "description": "Sale](https://www.article.com/product/29771/merto-138-media-storage-set-natural-oak) Beautiful bookshelf, exactly what we needed",
+    "materials": [
+      "oak"
+    ],
+    "colors": [
+      "natural",
+      "oak"
+    ],
+    "style_tags": [
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/29193/merto-33-shelving-unit-with-storage-natural-oak",
+    "in_stock": true
+  },
+  {
+    "id": "bookshelf_26991",
+    "category": "bookshelf",
+    "name": "Heidi 21 Modular Shelving Unit Narrow Walnut",
     "price": 449.0,
     "dimensions": {
       "width": 31,
       "depth": 15,
       "height": 79
     },
-    "style_descriptor": "fantol 51 5 shelving unit wide natural oak bookshelf natural oak white wood modern",
-    "purchase_url": "https://www.article.com/product/25676/fantol-51-5-shelving-unit-wide-natural-oak",
-    "in_stock": true
-  },
-  {
-    "id": "bookshelf_21758",
-    "category": "bookshelf",
-    "name": "Caliper 47 Shelving Unit White Walnut",
-    "price": 599.0,
-    "dimensions": {
-      "width": 31,
-      "depth": 15,
-      "height": 79
-    },
-    "style_descriptor": "caliper 47 shelving unit white walnut bookshelf white walnut modern",
-    "purchase_url": "https://www.article.com/product/21758/caliper-47-shelving-unit-white-walnut",
+    "style_descriptor": "heidi 21 modular shelving unit narrow walnut bookshelf walnut wood oak walnut light white oak modular modern see how real people style their article furniture. embodying all the light and airy qualities of the",
+    "description": "See how real people style their Article furniture. Embodying all the light and airy qualities of the Scandi design style, the Heidi modular bookcase is purposely unembellished to let its thoughtful details shine: solid-wood legs and apron, with subtle radiused corners, highlight its beautiful wood grain. Its modular design complements other pieces in",
+    "materials": [
+      "walnut",
+      "wood",
+      "oak"
+    ],
+    "colors": [
+      "walnut",
+      "light",
+      "white",
+      "oak",
+      "brown"
+    ],
+    "style_tags": [
+      "modular",
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/26991/heidi-21-modular-shelving-unit-narrow-walnut",
     "in_stock": true
   },
   {
@@ -205,8 +1324,1648 @@
       "depth": 15,
       "height": 79
     },
-    "style_descriptor": "krossa 32 5 shelving unit tall walnut bookshelf walnut white oak modern",
+    "style_descriptor": "krossa 32 5 shelving unit tall walnut bookshelf walnut oak walnut white oak warm modern see how real people style their article furniture. love these bookshelves! the quality for a ready t",
+    "description": "See how real people style their Article furniture. Love these bookshelves! The quality for a ready to assemble is excellent. They were easy to assemble and are very sturdy. The finish is lovely - a rich warm ... More",
+    "materials": [
+      "walnut",
+      "oak"
+    ],
+    "colors": [
+      "walnut",
+      "white",
+      "oak",
+      "warm"
+    ],
+    "style_tags": [
+      "modern"
+    ],
     "purchase_url": "https://www.article.com/product/29692/krossa-32-5-shelving-unit-tall-walnut",
+    "in_stock": true
+  },
+  {
+    "id": "bookshelf_25676",
+    "category": "bookshelf",
+    "name": "Fantol 51 5 Shelving Unit Wide Natural Oak",
+    "price": 449.0,
+    "dimensions": {
+      "width": 31,
+      "depth": 15,
+      "height": 79
+    },
+    "style_descriptor": "fantol 51 5 shelving unit wide natural oak bookshelf oak wood natural oak white modern this is a very pretty, sturdy unit with nice proportions. i used white-glove delivery to my office w",
+    "description": "This is a very pretty, sturdy unit with nice proportions. I used white-glove delivery to my office which was flawless. Easy to put together & beautiful solid wood finish",
+    "materials": [
+      "oak",
+      "wood"
+    ],
+    "colors": [
+      "natural",
+      "oak",
+      "white"
+    ],
+    "style_tags": [
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/25676/fantol-51-5-shelving-unit-wide-natural-oak",
+    "in_stock": true
+  },
+  {
+    "id": "bookshelf_18769",
+    "category": "bookshelf",
+    "name": "Newberry 31 25 Shelving Unit Wide Walnut",
+    "price": 799.0,
+    "dimensions": {
+      "width": 31,
+      "depth": 15,
+      "height": 79
+    },
+    "style_descriptor": "newberry 31 25 shelving unit wide walnut bookshelf walnut wood warm walnut modular modern see how real people style their article furniture. consider the newberry bundle for maximum stately ",
+    "description": "See how real people style their Article furniture. Consider the Newberry bundle for maximum stately appeal. With its rich, warm walnut tones and industrious powder-coated steel, the Newberry creates a combination sturdy enough to withstand the hardiest of workdays. With the ample storage offered from both the desk and shelf, the Newberry collection i",
+    "materials": [
+      "walnut",
+      "wood"
+    ],
+    "colors": [
+      "warm",
+      "walnut"
+    ],
+    "style_tags": [
+      "modular",
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/18769/newberry-31-25-shelving-unit-wide-walnut",
+    "in_stock": true
+  },
+  {
+    "id": "bookshelf_21760",
+    "category": "bookshelf",
+    "name": "Caliper 47 Shelving Unit Walnut",
+    "price": 599.0,
+    "dimensions": {
+      "width": 31,
+      "depth": 15,
+      "height": 79
+    },
+    "style_descriptor": "caliper 47 shelving unit walnut bookshelf walnut walnut white modern see how real people style their article furniture. better than i imagined. it completely elevated ou",
+    "description": "See how real people style their Article furniture. Better than I imagined. It completely elevated our bedroom. It was super easy to put together and is a sturdy piece. Giving my books a home is important and thi... More",
+    "materials": [
+      "walnut"
+    ],
+    "colors": [
+      "walnut",
+      "white"
+    ],
+    "style_tags": [
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/21760/caliper-47-shelving-unit-walnut",
+    "in_stock": true
+  },
+  {
+    "id": "bookshelf_27554",
+    "category": "bookshelf",
+    "name": "Zander 75 Shelving Unit Walnut",
+    "price": 1699.0,
+    "dimensions": {
+      "width": 31,
+      "depth": 15,
+      "height": 79
+    },
+    "style_descriptor": "zander 75 shelving unit walnut bookshelf walnut oak walnut white oak modern this is a beautiful piece. solid and well built and looks beautiful in our home. i wish it was less ",
+    "description": "This is a beautiful piece. Solid and well built and looks beautiful in our home. I wish it was less expensive, but sometimes you need to splurge on those essent... More Really beautiful shelves! White glove delivery was definitely worth it for us.",
+    "materials": [
+      "walnut",
+      "oak"
+    ],
+    "colors": [
+      "walnut",
+      "white",
+      "oak"
+    ],
+    "style_tags": [
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/27554/zander-75-shelving-unit-walnut",
+    "in_stock": true
+  },
+  {
+    "id": "bookshelf_27048",
+    "category": "bookshelf",
+    "name": "Heidi 33 25 Modular Shelving Unit Wide Walnut",
+    "price": 399.0,
+    "dimensions": {
+      "width": 31,
+      "depth": 15,
+      "height": 79
+    },
+    "style_descriptor": "heidi 33 25 modular shelving unit wide walnut bookshelf walnut wood oak walnut light white oak modular modern clean see how real people style their article furniture. embodying all the light and airy qualities of the",
+    "description": "See how real people style their Article furniture. Embodying all the light and airy qualities of the Scandi design style, the Heidi modular bookcase is purposely unembellished to let its thoughtful details shine: solid-wood legs and apron, with subtle radiused corners, highlight its beautiful wood grain. Its modular design complements other pieces in",
+    "materials": [
+      "walnut",
+      "wood",
+      "oak"
+    ],
+    "colors": [
+      "walnut",
+      "light",
+      "white",
+      "oak"
+    ],
+    "style_tags": [
+      "modular",
+      "modern",
+      "clean"
+    ],
+    "purchase_url": "https://www.article.com/product/27048/heidi-33-25-modular-shelving-unit-wide-walnut",
+    "in_stock": true
+  },
+  {
+    "id": "bookshelf_23908",
+    "category": "bookshelf",
+    "name": "Torme 34 Bookcase With Storage Tall Smoked Oak",
+    "price": 349.0,
+    "dimensions": {
+      "width": 31,
+      "depth": 15,
+      "height": 79
+    },
+    "style_descriptor": "torme 34 bookcase with storage tall smoked oak bookshelf oak oak modern see how real people style their article furniture. save $100](https://www.article.com/product/25304/",
+    "description": "See how real people style their Article furniture. Save $100](https://www.article.com/product/25304/torme-l-shape-desk-set-smoked-oak)",
+    "materials": [
+      "oak"
+    ],
+    "colors": [
+      "oak"
+    ],
+    "style_tags": [
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/23908/torme-34-bookcase-with-storage-tall-smoked-oak",
+    "in_stock": true
+  },
+  {
+    "id": "bookshelf_27453",
+    "category": "bookshelf",
+    "name": "Lilya 23 Shelving Unit Narrow White Oak",
+    "price": 749.0,
+    "dimensions": {
+      "width": 31,
+      "depth": 15,
+      "height": 79
+    },
+    "style_descriptor": "lilya 23 shelving unit narrow white oak bookshelf oak white oak modern sale](https://www.article.com/product/28086/lilya-shelving-unit-set-white-oak) best part is it comes",
+    "description": "Sale](https://www.article.com/product/28086/lilya-shelving-unit-set-white-oak) Best part is it comes with levelers (I think that\u2019s what they are) already on the bottom! Our old apartment has uneven floors.",
+    "materials": [
+      "oak"
+    ],
+    "colors": [
+      "white",
+      "oak"
+    ],
+    "style_tags": [
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/27453/lilya-23-shelving-unit-narrow-white-oak",
+    "in_stock": true
+  },
+  {
+    "id": "coffee_table_12662",
+    "category": "coffee_table",
+    "name": "Mara 31 5 Marble Coffee Table Walnut",
+    "price": 1699.0,
+    "dimensions": {
+      "width": 43,
+      "depth": 22,
+      "height": 17
+    },
+    "style_descriptor": "mara 31 5 marble coffee table walnut coffee table leather marble walnut tan brown green blue luxurious modern see how real people style their article furniture. for the love of sven. you deserve the best of the",
+    "description": "See how real people style their Article furniture. For the love of Sven. You deserve the best of the best. And by the best, we mean buttery-soft leather, polished marble, and a living room to brag about. Comfy and luxurious, there\u2019s a reason why the Sven and Mara are classics \u2014 they're also the reason why book club is at yours from now on.",
+    "materials": [
+      "leather",
+      "marble",
+      "walnut",
+      "oak"
+    ],
+    "colors": [
+      "tan",
+      "brown",
+      "green",
+      "blue",
+      "black"
+    ],
+    "style_tags": [
+      "luxurious",
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/12662/mara-31-5-marble-coffee-table-walnut",
+    "in_stock": true
+  },
+  {
+    "id": "coffee_table_12665",
+    "category": "coffee_table",
+    "name": "Vena 43 5 Marble Coffee Table Walnut",
+    "price": 399.0,
+    "dimensions": {
+      "width": 43,
+      "depth": 22,
+      "height": 17
+    },
+    "style_descriptor": "vena 43 5 marble coffee table walnut coffee table marble walnut oak walnut black white dark modern see how real people style their article furniture. the coffee table is perfect! sturdy, simple lines",
+    "description": "See how real people style their Article furniture. The coffee table is perfect! Sturdy, simple lines and very easy to assemble.",
+    "materials": [
+      "marble",
+      "walnut",
+      "oak"
+    ],
+    "colors": [
+      "walnut",
+      "black",
+      "white",
+      "dark",
+      "charcoal"
+    ],
+    "style_tags": [
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/12665/vena-43-5-marble-coffee-table-walnut",
+    "in_stock": true
+  },
+  {
+    "id": "coffee_table_24200",
+    "category": "coffee_table",
+    "name": "Amoeba 42 5 Coffee Table Walnut",
+    "price": 299.0,
+    "dimensions": {
+      "width": 43,
+      "depth": 22,
+      "height": 17
+    },
+    "style_descriptor": "amoeba 42 5 coffee table walnut coffee table walnut wood oak walnut white oak black mid-century modern see how real people style their article furniture. a mid-century modern design, the amoeba coffee ta",
+    "description": "See how real people style their Article furniture. A mid-century modern design, the Amoeba Coffee Table Bundle offers a pleasing focal point to your space. Each table features several solid wood pieces laminated together to form a beautiful tabletop with visible knots and color variation.",
+    "materials": [
+      "walnut",
+      "wood",
+      "oak",
+      "marble"
+    ],
+    "colors": [
+      "walnut",
+      "white",
+      "oak",
+      "black",
+      "dark"
+    ],
+    "style_tags": [
+      "mid-century",
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/24200/amoeba-42-5-coffee-table-walnut",
+    "in_stock": true
+  },
+  {
+    "id": "coffee_table_25371",
+    "category": "coffee_table",
+    "name": "Lenia 46 Storage Coffee Table Walnut",
+    "price": 399.0,
+    "dimensions": {
+      "width": 43,
+      "depth": 22,
+      "height": 17
+    },
+    "style_descriptor": "lenia 46 storage coffee table walnut coffee table marble walnut walnut black white dark modern see how real people style their article furniture. this table is perfect for me as have a pretty sma",
+    "description": "See how real people style their Article furniture. This table is perfect for me as have a pretty small living room and wanted some storage. Assembly was super easy and the table feels very sturdy and well made. ... More",
+    "materials": [
+      "marble",
+      "walnut"
+    ],
+    "colors": [
+      "walnut",
+      "black",
+      "white",
+      "dark",
+      "charcoal"
+    ],
+    "style_tags": [
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/25371/lenia-46-storage-coffee-table-walnut",
+    "in_stock": true
+  },
+  {
+    "id": "coffee_table_12664",
+    "category": "coffee_table",
+    "name": "Clarus 31 5 Glass Coffee Table Walnut",
+    "price": 999.0,
+    "dimensions": {
+      "width": 43,
+      "depth": 22,
+      "height": 17
+    },
+    "style_descriptor": "clarus 31 5 glass coffee table walnut coffee table walnut marble walnut light blue gray clean elegant modern see how real people style their article furniture. occham's razor strikes again: the simplest answer",
+    "description": "See how real people style their Article furniture. Occham's razor strikes again: the simplest answer is often the best one. That's why we love the Anton sofa paired with the Clarus coffee table. Clean lines, light profile \u2014 can't lose. At 74\", the Anton sofa is a great solution for spaces that will be overwhelmed by a giant sofa. With its clear toppe",
+    "materials": [
+      "walnut",
+      "marble"
+    ],
+    "colors": [
+      "walnut",
+      "light",
+      "blue",
+      "gray",
+      "black"
+    ],
+    "style_tags": [
+      "clean",
+      "elegant",
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/12664/clarus-31-5-glass-coffee-table-walnut",
+    "in_stock": true
+  },
+  {
+    "id": "coffee_table_25789",
+    "category": "coffee_table",
+    "name": "Adel 42 Round Coffee Table White Oak",
+    "price": 2198.0,
+    "dimensions": {
+      "width": 43,
+      "depth": 22,
+      "height": 17
+    },
+    "style_descriptor": "adel 42 round coffee table white oak coffee table oak leather marble white oak green black scandinavian minimalist modern see how real people style their article furniture. the scandinavian serenity bundle fosters an intim",
+    "description": "See how real people style their Article furniture. The Scandinavian Serenity Bundle fosters an intimate setting, boasting a minimalist design ethos. The sumptuous Charme Green leather and soothing, sinkable cushions paired with Adel's minimalist Smoked Oak finish make for a beautiful addition to your home, exuding a soothing Scandinavian vibe. Sit ba",
+    "materials": [
+      "oak",
+      "leather",
+      "marble",
+      "walnut",
+      "wood"
+    ],
+    "colors": [
+      "white",
+      "oak",
+      "green",
+      "black",
+      "walnut"
+    ],
+    "style_tags": [
+      "scandinavian",
+      "minimalist",
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/25789/adel-42-round-coffee-table-white-oak",
+    "in_stock": true
+  },
+  {
+    "id": "coffee_table_28660",
+    "category": "coffee_table",
+    "name": "Elise 43 Outdoor Coffee Table Light Eucalyptus",
+    "price": 599.0,
+    "dimensions": {
+      "width": 43,
+      "depth": 22,
+      "height": 17
+    },
+    "style_descriptor": "elise 43 outdoor coffee table light eucalyptus coffee table eucalyptus marble walnut light black dark charcoal modern see how real people style their article furniture. sale](https://www.article.com/product/29123/elise",
+    "description": "See how real people style their Article furniture. Sale](https://www.article.com/product/29123/elise-80-outdoor-sofa-set-basket-beige)",
+    "materials": [
+      "eucalyptus",
+      "marble",
+      "walnut",
+      "wood"
+    ],
+    "colors": [
+      "light",
+      "black",
+      "dark",
+      "charcoal",
+      "gray"
+    ],
+    "style_tags": [
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/28660/elise-43-outdoor-coffee-table-light-eucalyptus",
+    "in_stock": true
+  },
+  {
+    "id": "coffee_table_24929",
+    "category": "coffee_table",
+    "name": "Lloyd 54 Coffee Table Warm Brown",
+    "price": 399.0,
+    "dimensions": {
+      "width": 43,
+      "depth": 22,
+      "height": 17
+    },
+    "style_descriptor": "lloyd 54 coffee table warm brown coffee table marble walnut warm brown walnut black modern see how real people style their article furniture. such a large high quality coffee table",
+    "description": "See how real people style their Article furniture. Such a large high quality coffee table",
+    "materials": [
+      "marble",
+      "walnut"
+    ],
+    "colors": [
+      "warm",
+      "brown",
+      "walnut",
+      "black",
+      "white"
+    ],
+    "style_tags": [
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/24929/lloyd-54-coffee-table-warm-brown",
+    "in_stock": true
+  },
+  {
+    "id": "coffee_table_27082",
+    "category": "coffee_table",
+    "name": "Amoeba 35 5 Round Coffee Table Black",
+    "price": 500.0,
+    "dimensions": {
+      "width": 43,
+      "depth": 22,
+      "height": 17
+    },
+    "style_descriptor": "amoeba 35 5 round coffee table black coffee table wood walnut walnut modern we absolutely love our new table. it was really hard to find a solid wood, mid century modern coffee",
+    "description": "We absolutely love our new table. It was really hard to find a solid wood, mid century modern coffee table that wasn\u2019t $500+. This table is simple, modern, and ... More The Amoeba Wild Walnut Coffee Table was the perfect addition to my living room. Super easy to assemble, quick arrival and came without any damages. Highly recom... More",
+    "materials": [
+      "wood",
+      "walnut"
+    ],
+    "colors": [
+      "walnut"
+    ],
+    "style_tags": [
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/27082/amoeba-35-5-round-coffee-table-black",
+    "in_stock": true
+  },
+  {
+    "id": "coffee_table_24797",
+    "category": "coffee_table",
+    "name": "Suri 44 Square Coffee Table White Oak",
+    "price": 399.0,
+    "dimensions": {
+      "width": 43,
+      "depth": 22,
+      "height": 17
+    },
+    "style_descriptor": "suri 44 square coffee table white oak coffee table oak marble walnut white oak walnut black modern see how real people style their article furniture. solid contract grade material. the table itself i",
+    "description": "See how real people style their Article furniture. Solid contract grade material. The table itself is really robust and gives you a lot of space on top and underneath to utilize for storage and comfort. Pairs we... More",
+    "materials": [
+      "oak",
+      "marble",
+      "walnut"
+    ],
+    "colors": [
+      "white",
+      "oak",
+      "walnut",
+      "black",
+      "dark"
+    ],
+    "style_tags": [
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/24797/suri-44-square-coffee-table-white-oak",
+    "in_stock": true
+  },
+  {
+    "id": "throw_blanket_19331",
+    "category": "throw_blanket",
+    "name": "Jadara Throw Peacock Blue",
+    "price": 149.0,
+    "dimensions": {
+      "width": 50,
+      "depth": 60,
+      "height": 0
+    },
+    "style_descriptor": "jadara throw peacock blue throw blanket sheepskin cotton ivory cream cozy modern very high quality for the price. great value. very soft and cozy. great colors",
+    "description": "Very high quality for the price. Great value. Very soft and cozy. Great colors",
+    "materials": [
+      "sheepskin",
+      "cotton"
+    ],
+    "colors": [
+      "ivory",
+      "cream"
+    ],
+    "style_tags": [
+      "cozy",
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/19331/jadara-throw-peacock-blue",
+    "in_stock": true
+  },
+  {
+    "id": "throw_blanket_20039",
+    "category": "throw_blanket",
+    "name": "Fresno Cotton Gauze Throw Light Taupe",
+    "price": 149.0,
+    "dimensions": {
+      "width": 50,
+      "depth": 60,
+      "height": 0
+    },
+    "style_descriptor": "fresno cotton gauze throw light taupe throw blanket cotton gauze sheepskin light taupe ivory cream modern i am really impressed with the coziness and quality of this blanket - so much so that i ordered a se",
+    "description": "I am really impressed with the coziness and quality of this blanket - so much so that I ordered a second one. The color is beautiful, and it is perfect for warm... More Really nice. Great value for the price.",
+    "materials": [
+      "cotton",
+      "gauze",
+      "sheepskin"
+    ],
+    "colors": [
+      "light",
+      "taupe",
+      "ivory",
+      "cream",
+      "warm"
+    ],
+    "style_tags": [
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/20039/fresno-cotton-gauze-throw-light-taupe",
+    "in_stock": true
+  },
+  {
+    "id": "throw_blanket_2019",
+    "category": "throw_blanket",
+    "name": "Lanna 2 X 6 Sheepskin Throw Ivory",
+    "price": 89.0,
+    "dimensions": {
+      "width": 50,
+      "depth": 60,
+      "height": 0
+    },
+    "style_descriptor": "lanna 2 x 6 sheepskin throw ivory throw blanket sheepskin cotton ivory cream modern see how real people style their article furniture. love this rug! it\u2019s looks great in our home and o",
+    "description": "See how real people style their Article furniture. Love this rug! It\u2019s looks great in our home and our cats love laying on it.",
+    "materials": [
+      "sheepskin",
+      "cotton"
+    ],
+    "colors": [
+      "ivory",
+      "cream"
+    ],
+    "style_tags": [
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/2019/lanna-2-x-6-sheepskin-throw-ivory",
+    "in_stock": true
+  },
+  {
+    "id": "throw_blanket_2016",
+    "category": "throw_blanket",
+    "name": "Lanna 2 X 3 Sheepskin Throw Ivory",
+    "price": 149.0,
+    "dimensions": {
+      "width": 50,
+      "depth": 60,
+      "height": 0
+    },
+    "style_descriptor": "lanna 2 x 3 sheepskin throw ivory throw blanket sheepskin cotton ivory cream cozy modern see how real people style their article furniture. this is such a large and full sheepskin. i enjoy ",
+    "description": "See how real people style their Article furniture. This is such a large and full sheepskin. I enjoy layering different areas of our home with a sheepskin rug. We lay on them on our floor, I like them thrown on a... More",
+    "materials": [
+      "sheepskin",
+      "cotton"
+    ],
+    "colors": [
+      "ivory",
+      "cream"
+    ],
+    "style_tags": [
+      "cozy",
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/2016/lanna-2-x-3-sheepskin-throw-ivory",
+    "in_stock": true
+  },
+  {
+    "id": "throw_blanket_29910",
+    "category": "throw_blanket",
+    "name": "Galene Jacquard Cotton Throw Ivory Cream",
+    "price": 149.0,
+    "dimensions": {
+      "width": 50,
+      "depth": 60,
+      "height": 0
+    },
+    "style_descriptor": "galene jacquard cotton throw ivory cream throw blanket sheepskin ivory modern this newer product is still making itself at home, our promise? high-quality furniture at radically ",
+    "description": "This newer product is still making itself at home, Our promise? High-quality furniture at radically lower (and much fairer) prices than comparable retailers.",
+    "materials": [
+      "sheepskin"
+    ],
+    "colors": [
+      "ivory"
+    ],
+    "style_tags": [
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/29910/galene-jacquard-cotton-throw-ivory-cream",
+    "in_stock": true
+  },
+  {
+    "id": "throw_blanket_19930",
+    "category": "throw_blanket",
+    "name": "Leni Queen Cotton Gauze Quilt Duo Taupe",
+    "price": 249.0,
+    "dimensions": {
+      "width": 50,
+      "depth": 60,
+      "height": 0
+    },
+    "style_descriptor": "leni queen cotton gauze quilt duo taupe throw blanket linen cotton gauze ivory white taupe light modern see how real people style their article furniture. it is what i expected from the description and ni",
+    "description": "See how real people style their Article furniture. It is what I expected from the description and nice quality. I haven\u2019t slept with it yet but have had blankets like them and I know it will be very comfy. It wa... More",
+    "materials": [
+      "linen",
+      "cotton",
+      "gauze"
+    ],
+    "colors": [
+      "ivory",
+      "white",
+      "taupe",
+      "light"
+    ],
+    "style_tags": [
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/19930/leni-queen-cotton-gauze-quilt-duo-taupe",
+    "in_stock": true
+  },
+  {
+    "id": "throw_blanket_29915",
+    "category": "throw_blanket",
+    "name": "Nordea Large Pillow Ivory",
+    "price": 49.0,
+    "dimensions": {
+      "width": 50,
+      "depth": 60,
+      "height": 0
+    },
+    "style_descriptor": "nordea large pillow ivory throw blanket boucle sheepskin ivory white black green modern this newer product is still making itself at home, our promise? high-quality furniture at radically ",
+    "description": "This newer product is still making itself at home, Our promise? High-quality furniture at radically lower (and much fairer) prices than comparable retailers.",
+    "materials": [
+      "boucle",
+      "sheepskin"
+    ],
+    "colors": [
+      "ivory",
+      "white",
+      "black",
+      "green",
+      "multi"
+    ],
+    "style_tags": [
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/29915/nordea-large-pillow-ivory",
+    "in_stock": true
+  },
+  {
+    "id": "throw_blanket_23134",
+    "category": "throw_blanket",
+    "name": "Bovi 9 X 12 Rug Silver Gray",
+    "price": 169.0,
+    "dimensions": {
+      "width": 50,
+      "depth": 60,
+      "height": 0
+    },
+    "style_descriptor": "bovi 9 x 12 rug silver gray throw blanket silver wool gray blue ivory natural traditional cozy modern see how real people style their article furniture. listen, if you're buying a rug you need a rug pad",
+    "description": "See how real people style their Article furniture. Listen, if you're buying a rug you need a rug pad. You do! Thankfully, our Stein rug pads are actually worth the money: thick, cushy, and with an anti-slip coating, they keep your rug in place and actually improve the sitting/walking/laying down experience. The security of the Stein plus the the repe",
+    "materials": [
+      "silver",
+      "wool"
+    ],
+    "colors": [
+      "gray",
+      "blue",
+      "ivory",
+      "natural",
+      "brown"
+    ],
+    "style_tags": [
+      "traditional",
+      "cozy",
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/23134/bovi-9-x-12-rug-silver-gray",
+    "in_stock": true
+  },
+  {
+    "id": "throw_blanket_31565",
+    "category": "throw_blanket",
+    "name": "Vati 114 Right Storage Sleeper Sectional Natural Oak And Green Wool Boucle",
+    "price": 1899.0,
+    "dimensions": {
+      "width": 50,
+      "depth": 60,
+      "height": 0
+    },
+    "style_descriptor": "vati 114 right storage sleeper sectional natural oak and green wool boucle throw blanket oak wool boucle natural oak green ivory modular modern comfortable. sturdy. high quality. beautiful! very comfortable and stylish! the cushions get softer ",
+    "description": "Comfortable. Sturdy. High quality. Beautiful! Very comfortable and stylish! The cushions get softer with use, and the fact that it\u2019s also a guest bed and storage is perfect for my 1 bdrm apartment - recommend!",
+    "materials": [
+      "oak",
+      "wool",
+      "boucle",
+      "silver"
+    ],
+    "colors": [
+      "natural",
+      "oak",
+      "green",
+      "ivory",
+      "white"
+    ],
+    "style_tags": [
+      "modular",
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/31565/vati-114-right-storage-sleeper-sectional-natural-oak-and-green-wool-boucle",
+    "in_stock": true
+  },
+  {
+    "id": "throw_blanket_21661",
+    "category": "throw_blanket",
+    "name": "Leni Standard Cotton Gauze Sham Set Duo Taupe",
+    "price": 249.0,
+    "dimensions": {
+      "width": 50,
+      "depth": 60,
+      "height": 0
+    },
+    "style_descriptor": "leni standard cotton gauze sham set duo taupe throw blanket linen cotton gauze ivory white taupe light modern see how real people style their article furniture. hmm, there aren\u2019t any reviews yet for the leni st",
+    "description": "See how real people style their Article furniture. Hmm, there aren\u2019t any reviews yet for the Leni Standard Cotton Gauze Sham Set - Duo Taupe -",
+    "materials": [
+      "linen",
+      "cotton",
+      "gauze"
+    ],
+    "colors": [
+      "ivory",
+      "white",
+      "taupe",
+      "light"
+    ],
+    "style_tags": [
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/21661/leni-standard-cotton-gauze-sham-set-duo-taupe",
+    "in_stock": true
+  },
+  {
+    "id": "dining_table_28733",
+    "category": "dining_table",
+    "name": "Conan 75 Oval Dining Table Walnut",
+    "price": 1194.0,
+    "dimensions": {
+      "width": 86,
+      "depth": 36,
+      "height": 30
+    },
+    "style_descriptor": "conan 75 oval dining table walnut dining table walnut wood oak walnut warm gray oak mid-century modern clean see how real people style their article furniture. dinner parties galore. we designed the conan dini",
+    "description": "See how real people style their Article furniture. Dinner parties galore. We designed the Conan Dining Table to tick all the mid-century modern boxes: large oval-shaped top, solid wood starburst leg design, and a warm walnut finish. Paired with the angular Iines of the Zola Volcanic Gray Chairs, this dining bundle is packed to the brim with a mid-cen",
+    "materials": [
+      "walnut",
+      "wood",
+      "oak"
+    ],
+    "colors": [
+      "walnut",
+      "warm",
+      "gray",
+      "oak"
+    ],
+    "style_tags": [
+      "mid-century",
+      "modern",
+      "clean"
+    ],
+    "purchase_url": "https://www.article.com/product/28733/conan-75-oval-dining-table-walnut",
+    "in_stock": true
+  },
+  {
+    "id": "dining_table_15096",
+    "category": "dining_table",
+    "name": "Madera 86 125 Solid Wood Extendable Dining Table Oak",
+    "price": 2844.0,
+    "dimensions": {
+      "width": 86,
+      "depth": 36,
+      "height": 30
+    },
+    "style_descriptor": "madera 86 125 solid wood extendable dining table oak dining table wood oak oak clean modern see how real people style their article furniture. this is one of just a few tables able to seat 12 ",
+    "description": "See how real people style their Article furniture. This is one of just a few tables able to seat 12 we were able to find. The design is great - everyone who sees it loves it, and it is solid and the legs don't g... More",
+    "materials": [
+      "wood",
+      "oak"
+    ],
+    "colors": [
+      "oak"
+    ],
+    "style_tags": [
+      "clean",
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/15096/madera-86-125-solid-wood-extendable-dining-table-oak",
+    "in_stock": true
+  },
+  {
+    "id": "dining_table_27601",
+    "category": "dining_table",
+    "name": "Seno 86 5 Dining Table Walnut",
+    "price": 2173.0,
+    "dimensions": {
+      "width": 86,
+      "depth": 36,
+      "height": 30
+    },
+    "style_descriptor": "seno 86 5 dining table walnut dining table walnut oak walnut oak clean sleek modern see how real people style their article furniture. very nice table. heavy. sturdy. simple. good widt",
+    "description": "See how real people style their Article furniture. Very nice table. Heavy. Sturdy. Simple. Good width.",
+    "materials": [
+      "walnut",
+      "oak"
+    ],
+    "colors": [
+      "walnut",
+      "oak"
+    ],
+    "style_tags": [
+      "clean",
+      "sleek",
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/27601/seno-86-5-dining-table-walnut",
+    "in_stock": true
+  },
+  {
+    "id": "dining_table_15102",
+    "category": "dining_table",
+    "name": "Madera 71 Solid Wood Dining Table Oak",
+    "price": 999.0,
+    "dimensions": {
+      "width": 86,
+      "depth": 36,
+      "height": 30
+    },
+    "style_descriptor": "madera 71 solid wood dining table oak dining table wood oak walnut oak black walnut sleek clean modern see how real people style their article furniture. rough and refined \u2014 does a hotter combination exi",
+    "description": "See how real people style their Article furniture. Rough and refined \u2014 does a hotter combination exist? This bundle evokes a certain cowboy 'tude but with the sleek finish that behooves your dining room. The Madera table is built from solid oak and finished with a wirebrush, giving the tabletop a nicely textured finish. The Dabo chairs \u2014 also built f",
+    "materials": [
+      "wood",
+      "oak",
+      "walnut"
+    ],
+    "colors": [
+      "oak",
+      "black",
+      "walnut"
+    ],
+    "style_tags": [
+      "sleek",
+      "clean",
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/15102/madera-71-solid-wood-dining-table-oak",
+    "in_stock": true
+  },
+  {
+    "id": "dining_table_27685",
+    "category": "dining_table",
+    "name": "Seno 36 Round Dining Table Oak",
+    "price": 887.0,
+    "dimensions": {
+      "width": 86,
+      "depth": 36,
+      "height": 30
+    },
+    "style_descriptor": "seno 36 round dining table oak dining table oak oak clean modern see how real people style their article furniture. the table is so neat and well manufactured. it is",
+    "description": "See how real people style their Article furniture. The table is so neat and well manufactured. It is a beauty",
+    "materials": [
+      "oak"
+    ],
+    "colors": [
+      "oak"
+    ],
+    "style_tags": [
+      "clean",
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/27685/seno-36-round-dining-table-oak",
+    "in_stock": true
+  },
+  {
+    "id": "dining_table_25776",
+    "category": "dining_table",
+    "name": "Heidi 48 67 75 Extendable Round Dining Table Walnut",
+    "price": 699.0,
+    "dimensions": {
+      "width": 86,
+      "depth": 36,
+      "height": 30
+    },
+    "style_descriptor": "heidi 48 67 75 extendable round dining table walnut dining table walnut wood oak walnut light white oak scandinavian clean modular see how real people style their article furniture. the dine and unwind bundle embodies all the light",
+    "description": "See how real people style their Article furniture. The Dine and Unwind Bundle embodies all the light and airy qualities of the Scandi design style. The Ulka chair features a curved backrest that seamlessly integrates with the rounded-edge frame of the Heidi table, making the desire to remain at the table strong \u2014 even well past dinner's end. Made fro",
+    "materials": [
+      "walnut",
+      "wood",
+      "oak"
+    ],
+    "colors": [
+      "walnut",
+      "light",
+      "white",
+      "oak",
+      "ivory"
+    ],
+    "style_tags": [
+      "scandinavian",
+      "clean",
+      "modular",
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/25776/heidi-48-67-75-extendable-round-dining-table-walnut",
+    "in_stock": true
+  },
+  {
+    "id": "dining_table_27598",
+    "category": "dining_table",
+    "name": "Seno 71 110 Extendable Dining Table Oak",
+    "price": 1199.0,
+    "dimensions": {
+      "width": 86,
+      "depth": 36,
+      "height": 30
+    },
+    "style_descriptor": "seno 71 110 extendable dining table oak dining table oak walnut wood oak walnut gray clean modern see how real people style their article furniture. the super long seno table comes fully prepared to",
+    "description": "See how real people style their Article furniture. The super long Seno Table comes fully prepared to host everyone (seriously, invite everyone). It extends easily to comfortably fit all your guests and is no stranger to making room for more. Paired with the richly upholstered, generously padded Chanel dining chairs and bench, you won't need to clink",
+    "materials": [
+      "oak",
+      "walnut",
+      "wood"
+    ],
+    "colors": [
+      "oak",
+      "walnut",
+      "gray"
+    ],
+    "style_tags": [
+      "clean",
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/27598/seno-71-110-extendable-dining-table-oak",
+    "in_stock": true
+  },
+  {
+    "id": "dining_table_23394",
+    "category": "dining_table",
+    "name": "Adel 82 5 Dining Table Smoked Oak",
+    "price": 1199.0,
+    "dimensions": {
+      "width": 86,
+      "depth": 36,
+      "height": 30
+    },
+    "style_descriptor": "adel 82 5 dining table smoked oak dining table oak wood wool oak white ivory black clean modern see how real people style their article furniture. a simple form that's more than the sum of its par",
+    "description": "See how real people style their Article furniture. A simple form that's more than the sum of its parts, the Gourmet Gathering Bundle is boldly sculptural. With a strong, solid foundation of solid wood, this bundle is set apart by the Munk dining chair's round tuffet of boucl\u00e9 and foam filling. With a slightly curved backrest and rounded table edges,",
+    "materials": [
+      "oak",
+      "wood",
+      "wool",
+      "boucle"
+    ],
+    "colors": [
+      "oak",
+      "white",
+      "ivory",
+      "black"
+    ],
+    "style_tags": [
+      "clean",
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/23394/adel-82-5-dining-table-smoked-oak",
+    "in_stock": true
+  },
+  {
+    "id": "dining_table_27599",
+    "category": "dining_table",
+    "name": "Seno 71 Dining Table Walnut",
+    "price": 799.0,
+    "dimensions": {
+      "width": 86,
+      "depth": 36,
+      "height": 30
+    },
+    "style_descriptor": "seno 71 dining table walnut dining table wood walnut oak walnut oak gray green clean modern see how real people style their article furniture. you deserve the best of the best. and by the best",
+    "description": "See how real people style their Article furniture. You deserve the best of the best. And by the best, we mean a solid wood table and foam-padded chairs you'll never want to get up from. Sturdy and comfortable, there's a reason why the Seno table and Nosh chairs are classics \u2014 they're also the reason why dinners will be at yours from now until forever",
+    "materials": [
+      "wood",
+      "walnut",
+      "oak"
+    ],
+    "colors": [
+      "walnut",
+      "oak",
+      "gray",
+      "green",
+      "blue"
+    ],
+    "style_tags": [
+      "clean",
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/27599/seno-71-dining-table-walnut",
+    "in_stock": true
+  },
+  {
+    "id": "bed_frame_25632",
+    "category": "bed_frame",
+    "name": "Basi King Bed Frame Walnut",
+    "price": 999.0,
+    "dimensions": {
+      "width": 80,
+      "depth": 85,
+      "height": 40
+    },
+    "style_descriptor": "basi king bed frame walnut bed frame rattan wood oak natural oak walnut white coastal modern see how real people style their article furniture. as low as $69 / month or interest-free.see plans",
+    "description": "See how real people style their Article furniture. As low as $69 / month or interest-free.See plans",
+    "materials": [
+      "rattan",
+      "wood",
+      "oak",
+      "walnut",
+      "boucle"
+    ],
+    "colors": [
+      "natural",
+      "oak",
+      "walnut",
+      "white",
+      "tan"
+    ],
+    "style_tags": [
+      "coastal",
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/25632/basi-king-bed-frame-walnut",
+    "in_stock": true
+  },
+  {
+    "id": "bed_frame_25633",
+    "category": "bed_frame",
+    "name": "Basi King Bed Frame Oak",
+    "price": 999.0,
+    "dimensions": {
+      "width": 80,
+      "depth": 85,
+      "height": 40
+    },
+    "style_descriptor": "basi king bed frame oak bed frame oak rattan wood oak natural walnut white coastal modern see how real people style their article furniture. as low as $69 / month or interest-free.see plans",
+    "description": "See how real people style their Article furniture. As low as $69 / month or interest-free.See plans",
+    "materials": [
+      "oak",
+      "rattan",
+      "wood",
+      "walnut",
+      "boucle"
+    ],
+    "colors": [
+      "oak",
+      "natural",
+      "walnut",
+      "white",
+      "tan"
+    ],
+    "style_tags": [
+      "coastal",
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/25633/basi-king-bed-frame-oak",
+    "in_stock": true
+  },
+  {
+    "id": "bed_frame_25445",
+    "category": "bed_frame",
+    "name": "Basi Full Bed Frame Smoked Oak",
+    "price": 1698.0,
+    "dimensions": {
+      "width": 80,
+      "depth": 85,
+      "height": 40
+    },
+    "style_descriptor": "basi full bed frame smoked oak bed frame oak boucle walnut oak white natural walnut clean minimalist modern see how real people style their article furniture. last chance](https://www.article.com/product/2563",
+    "description": "See how real people style their Article furniture. Last Chance](https://www.article.com/product/25639/basi-queen-bed-frame-white)",
+    "materials": [
+      "oak",
+      "boucle",
+      "walnut"
+    ],
+    "colors": [
+      "oak",
+      "white",
+      "natural",
+      "walnut"
+    ],
+    "style_tags": [
+      "clean",
+      "minimalist",
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/25445/basi-full-bed-frame-smoked-oak",
+    "in_stock": true
+  },
+  {
+    "id": "bed_frame_25640",
+    "category": "bed_frame",
+    "name": "Basi Full Bed Frame Walnut",
+    "price": 1698.0,
+    "dimensions": {
+      "width": 80,
+      "depth": 85,
+      "height": 40
+    },
+    "style_descriptor": "basi full bed frame walnut bed frame walnut oak boucle walnut white oak natural clean minimalist modern see how real people style their article furniture. last chance](https://www.article.com/product/2563",
+    "description": "See how real people style their Article furniture. Last Chance](https://www.article.com/product/25639/basi-queen-bed-frame-white)",
+    "materials": [
+      "walnut",
+      "oak",
+      "boucle"
+    ],
+    "colors": [
+      "walnut",
+      "white",
+      "oak",
+      "natural"
+    ],
+    "style_tags": [
+      "clean",
+      "minimalist",
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/25640/basi-full-bed-frame-walnut",
+    "in_stock": true
+  },
+  {
+    "id": "bed_frame_21541",
+    "category": "bed_frame",
+    "name": "Tessu Queen Low Profile Upholstered Bed Glaze Gray",
+    "price": 1448.0,
+    "dimensions": {
+      "width": 80,
+      "depth": 85,
+      "height": 40
+    },
+    "style_descriptor": "tessu queen low profile upholstered bed glaze gray bed frame oak boucle leather gray white oak natural modern see how real people style their article furniture. we were very impressed with the quality of this b",
+    "description": "See how real people style their Article furniture. We were very impressed with the quality of this bed, and it exceeded our expectations. We\u2019ll be considering Article again for future purchases!",
+    "materials": [
+      "oak",
+      "boucle",
+      "leather",
+      "wool"
+    ],
+    "colors": [
+      "gray",
+      "white",
+      "oak",
+      "natural",
+      "ivory"
+    ],
+    "style_tags": [
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/21541/tessu-queen-low-profile-upholstered-bed-glaze-gray",
+    "in_stock": true
+  },
+  {
+    "id": "bed_frame_22835",
+    "category": "bed_frame",
+    "name": "Basi Twin Bed Frame Oak",
+    "price": 549.0,
+    "dimensions": {
+      "width": 80,
+      "depth": 85,
+      "height": 40
+    },
+    "style_descriptor": "basi twin bed frame oak bed frame oak wood wool oak light ivory walnut sleek minimalist modern see how real people style their article furniture. caught you staring. the sleek, minimalist basi be",
+    "description": "See how real people style their Article furniture. Caught you staring. The sleek, minimalist Basi bed frame meets its match in the Gatsby-era-inspired Almelo headboard: a perfect study in attractive opposites. The Almelo's foam-filled frame is upholstered in textural boucl\u00e9, and features twin shelves at just the right height for drinks, bedside readi",
+    "materials": [
+      "oak",
+      "wood",
+      "wool",
+      "boucle",
+      "walnut"
+    ],
+    "colors": [
+      "oak",
+      "light",
+      "ivory",
+      "walnut",
+      "white"
+    ],
+    "style_tags": [
+      "sleek",
+      "minimalist",
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/22835/basi-twin-bed-frame-oak",
+    "in_stock": true
+  },
+  {
+    "id": "bed_frame_25637",
+    "category": "bed_frame",
+    "name": "Basi Queen Bed Frame Walnut",
+    "price": 899.0,
+    "dimensions": {
+      "width": 80,
+      "depth": 85,
+      "height": 40
+    },
+    "style_descriptor": "basi queen bed frame walnut bed frame oak walnut boucle oak natural walnut white modern clean see how real people style their article furniture. make space with the kouva bedroom bundle. with it",
+    "description": "See how real people style their Article furniture. Make space with the Kouva bedroom bundle. With its unique solid oak tambour design and modern open shelving, the Kouva is ready to house your book collection, your empty water glasses, your alarm clock, and a midnight snack. And the Basi? It's just happy to hold your mattress.",
+    "materials": [
+      "oak",
+      "walnut",
+      "boucle",
+      "leather"
+    ],
+    "colors": [
+      "oak",
+      "natural",
+      "walnut",
+      "white",
+      "tan"
+    ],
+    "style_tags": [
+      "modern",
+      "clean"
+    ],
+    "purchase_url": "https://www.article.com/product/25637/basi-queen-bed-frame-walnut",
+    "in_stock": true
+  },
+  {
+    "id": "bed_frame_25639",
+    "category": "bed_frame",
+    "name": "Basi Queen Bed Frame White",
+    "price": 899.0,
+    "dimensions": {
+      "width": 80,
+      "depth": 85,
+      "height": 40
+    },
+    "style_descriptor": "basi queen bed frame white bed frame oak walnut boucle oak natural white walnut modern clean see how real people style their article furniture. make space with the kouva bedroom bundle. with it",
+    "description": "See how real people style their Article furniture. Make space with the Kouva bedroom bundle. With its unique solid oak tambour design and modern open shelving, the Kouva is ready to house your book collection, your empty water glasses, your alarm clock, and a midnight snack. And the Basi? It's just happy to hold your mattress.",
+    "materials": [
+      "oak",
+      "walnut",
+      "boucle",
+      "leather"
+    ],
+    "colors": [
+      "oak",
+      "natural",
+      "white",
+      "walnut",
+      "ivory"
+    ],
+    "style_tags": [
+      "modern",
+      "clean"
+    ],
+    "purchase_url": "https://www.article.com/product/25639/basi-queen-bed-frame-white",
+    "in_stock": true
+  },
+  {
+    "id": "bed_frame_25638",
+    "category": "bed_frame",
+    "name": "Basi Queen Bed Frame Oak",
+    "price": 899.0,
+    "dimensions": {
+      "width": 80,
+      "depth": 85,
+      "height": 40
+    },
+    "style_descriptor": "basi queen bed frame oak bed frame oak walnut boucle oak natural walnut white modern clean see how real people style their article furniture. make space with the kouva bedroom bundle. with it",
+    "description": "See how real people style their Article furniture. Make space with the Kouva bedroom bundle. With its unique solid oak tambour design and modern open shelving, the Kouva is ready to house your book collection, your empty water glasses, your alarm clock, and a midnight snack. And the Basi? It's just happy to hold your mattress.",
+    "materials": [
+      "oak",
+      "walnut",
+      "boucle",
+      "leather"
+    ],
+    "colors": [
+      "oak",
+      "natural",
+      "walnut",
+      "white",
+      "ivory"
+    ],
+    "style_tags": [
+      "modern",
+      "clean"
+    ],
+    "purchase_url": "https://www.article.com/product/25638/basi-queen-bed-frame-oak",
+    "in_stock": true
+  },
+  {
+    "id": "side_table_23361",
+    "category": "side_table",
+    "name": "Torme C Side Table White Oak",
+    "price": 699.0,
+    "dimensions": {
+      "width": 18,
+      "depth": 18,
+      "height": 24
+    },
+    "style_descriptor": "torme c side table white oak side table oak white oak sleek modern see how real people style their article furniture. the torme coffee x side table bundle features sim",
+    "description": "See how real people style their Article furniture. The Torme Coffee x Side Table Bundle features simple lines and thoughtful details, from deep storage drawers to softly rounded legs. Subtle but impactful, the Torme bundle is a functional, beautiful pairing to any space.",
+    "materials": [
+      "oak"
+    ],
+    "colors": [
+      "white",
+      "oak"
+    ],
+    "style_tags": [
+      "sleek",
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/23361/torme-c-side-table-white-oak",
+    "in_stock": true
+  },
+  {
+    "id": "side_table_25653",
+    "category": "side_table",
+    "name": "Tovi Side Table Black",
+    "price": 199.0,
+    "dimensions": {
+      "width": 18,
+      "depth": 18,
+      "height": 24
+    },
+    "style_descriptor": "tovi side table black side table walnut oak marble walnut oak black warm modern see how real people style their article furniture. we love our side tables. they are a little short,",
+    "description": "See how real people style their Article furniture. We love our side tables. They are a little short, but the quality is great and the look is even better. The wood grain is lovely and goes with the other wood pi... More",
+    "materials": [
+      "walnut",
+      "oak",
+      "marble",
+      "wood"
+    ],
+    "colors": [
+      "walnut",
+      "oak",
+      "black",
+      "warm",
+      "brown"
+    ],
+    "style_tags": [
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/25653/tovi-side-table-black",
+    "in_stock": true
+  },
+  {
+    "id": "side_table_25370",
+    "category": "side_table",
+    "name": "Lenia Storage Side Table Walnut",
+    "price": 199.0,
+    "dimensions": {
+      "width": 18,
+      "depth": 18,
+      "height": 24
+    },
+    "style_descriptor": "lenia storage side table walnut side table walnut oak marble walnut oak black warm modern see how real people style their article furniture. we only had a small space to work with next to th",
+    "description": "See how real people style their Article furniture. We only had a small space to work with next to the bed and it was great that article had a small profile nightstand. The veneer wood is high-quality as compared... More",
+    "materials": [
+      "walnut",
+      "oak",
+      "marble",
+      "wood"
+    ],
+    "colors": [
+      "walnut",
+      "oak",
+      "black",
+      "warm",
+      "brown"
+    ],
+    "style_tags": [
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/25370/lenia-storage-side-table-walnut",
+    "in_stock": true
+  },
+  {
+    "id": "side_table_19377",
+    "category": "side_table",
+    "name": "Agotu Marble Side Table Walnut",
+    "price": 199.0,
+    "dimensions": {
+      "width": 18,
+      "depth": 18,
+      "height": 24
+    },
+    "style_descriptor": "agotu marble side table walnut side table marble walnut oak walnut oak black warm modern see how real people style their article furniture. love the side table that goes so well with the bu",
+    "description": "See how real people style their Article furniture. Love the side table that goes so well with the Burrard furniture, the rug and the lamp. Great quality of all the material",
+    "materials": [
+      "marble",
+      "walnut",
+      "oak"
+    ],
+    "colors": [
+      "walnut",
+      "oak",
+      "black",
+      "warm",
+      "brown"
+    ],
+    "style_tags": [
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/19377/agotu-marble-side-table-walnut",
+    "in_stock": true
+  },
+  {
+    "id": "side_table_24197",
+    "category": "side_table",
+    "name": "Amoeba Side Table White Oak",
+    "price": 199.0,
+    "dimensions": {
+      "width": 18,
+      "depth": 18,
+      "height": 24
+    },
+    "style_descriptor": "amoeba side table white oak side table oak marble walnut white oak walnut black mid-century modern clean see how real people style their article furniture. accentuate your space with the amoeba x mara side",
+    "description": "See how real people style their Article furniture. Accentuate your space with the Amoeba x Mara Side Table Bundle. Inspired by mid-century modern design, both tables feature a compact, clean aesthetic that seamlessly fits into any room of the house. From Ameobas' mid-century atomic design to Mara's polished marble top, the duo is always ready to serv",
+    "materials": [
+      "oak",
+      "marble",
+      "walnut"
+    ],
+    "colors": [
+      "white",
+      "oak",
+      "walnut",
+      "black",
+      "warm"
+    ],
+    "style_tags": [
+      "mid-century",
+      "modern",
+      "clean",
+      "cozy"
+    ],
+    "purchase_url": "https://www.article.com/product/24197/amoeba-side-table-white-oak",
+    "in_stock": true
+  },
+  {
+    "id": "side_table_25403",
+    "category": "side_table",
+    "name": "Skane Outdoor Side Table Green",
+    "price": 199.0,
+    "dimensions": {
+      "width": 18,
+      "depth": 18,
+      "height": 24
+    },
+    "style_descriptor": "skane outdoor side table green side table walnut oak marble green walnut oak black scandinavian modern see how real people style their article furniture. beautiful color and quality and material is so he",
+    "description": "See how real people style their Article furniture. Beautiful color and quality and material is so heavy. I really love it.",
+    "materials": [
+      "walnut",
+      "oak",
+      "marble"
+    ],
+    "colors": [
+      "green",
+      "walnut",
+      "oak",
+      "black",
+      "warm"
+    ],
+    "style_tags": [
+      "scandinavian",
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/25403/skane-outdoor-side-table-green",
+    "in_stock": true
+  },
+  {
+    "id": "side_table_15241",
+    "category": "side_table",
+    "name": "Jeppa Side Table Walnut",
+    "price": 199.0,
+    "dimensions": {
+      "width": 18,
+      "depth": 18,
+      "height": 24
+    },
+    "style_descriptor": "jeppa side table walnut side table walnut oak marble walnut oak black warm modern see how real people style their article furniture. purchased both the jeppa and portima side tables ",
+    "description": "See how real people style their Article furniture. Purchased both the Jeppa and Portima side tables together. Both arrived well packaged and in excellent condition. High quality. Extremely happy with the purchase.",
+    "materials": [
+      "walnut",
+      "oak",
+      "marble"
+    ],
+    "colors": [
+      "walnut",
+      "oak",
+      "black",
+      "warm",
+      "brown"
+    ],
+    "style_tags": [
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/15241/jeppa-side-table-walnut",
+    "in_stock": true
+  },
+  {
+    "id": "side_table_27447",
+    "category": "side_table",
+    "name": "Tala Travertine Side Table Walnut",
+    "price": 199.0,
+    "dimensions": {
+      "width": 18,
+      "depth": 18,
+      "height": 24
+    },
+    "style_descriptor": "tala travertine side table walnut side table walnut oak marble walnut oak black warm modern this newer product is still making itself at home, our promise? high-quality furniture at radically ",
+    "description": "This newer product is still making itself at home, Our promise? High-quality furniture at radically lower (and much fairer) prices than comparable retailers.",
+    "materials": [
+      "walnut",
+      "oak",
+      "marble"
+    ],
+    "colors": [
+      "walnut",
+      "oak",
+      "black",
+      "warm",
+      "brown"
+    ],
+    "style_tags": [
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/27447/tala-travertine-side-table-walnut",
+    "in_stock": true
+  },
+  {
+    "id": "side_table_19083",
+    "category": "side_table",
+    "name": "Fortra Storage Side Table White Oak",
+    "price": 799.0,
+    "dimensions": {
+      "width": 18,
+      "depth": 18,
+      "height": 24
+    },
+    "style_descriptor": "fortra storage side table white oak side table oak wood white oak light modern see how real people style their article furniture. your open floor plan awaits. the fortra coffee x ",
+    "description": "See how real people style their Article furniture. Your open floor plan awaits. The Fortra Coffee x Side Table Bundle features spacious storage hidden behind its fluted doors, so you can finally put the clutter away and leave space up top for the high-priority things \u2014 like that end-of-week cocktail you definitely want close by.",
+    "materials": [
+      "oak",
+      "wood"
+    ],
+    "colors": [
+      "white",
+      "oak",
+      "light"
+    ],
+    "style_tags": [
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/19083/fortra-storage-side-table-white-oak",
+    "in_stock": true
+  },
+  {
+    "id": "side_table_30094",
+    "category": "side_table",
+    "name": "Tovi Side Table Smoked Oak",
+    "price": 199.0,
+    "dimensions": {
+      "width": 18,
+      "depth": 18,
+      "height": 24
+    },
+    "style_descriptor": "tovi side table smoked oak side table walnut oak marble walnut oak black warm modern see how real people style their article furniture. we love our side tables. they are a little short,",
+    "description": "See how real people style their Article furniture. We love our side tables. They are a little short, but the quality is great and the look is even better. The wood grain is lovely and goes with the other wood pi... More",
+    "materials": [
+      "walnut",
+      "oak",
+      "marble",
+      "wood"
+    ],
+    "colors": [
+      "walnut",
+      "oak",
+      "black",
+      "warm",
+      "brown"
+    ],
+    "style_tags": [
+      "modern"
+    ],
+    "purchase_url": "https://www.article.com/product/30094/tovi-side-table-smoked-oak",
     "in_stock": true
   }
 ]

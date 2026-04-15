@@ -1,22 +1,15 @@
 # agents/retrieval.py
 from state import AppState
-from vector_store import search_products
+from vector_store import search_products, get_product_by_id
 from logger import log_event, log_stage_start, log_stage_end
 
 
 def _compute_style_coherence(items: list, style_tags: list) -> float:
-    """
-    Simple critic check — averages similarity scores and applies a
-    style tag bonus if products match the concept style tags.
-    A real Critic Agent would make a second LLM call to evaluate.
-    REAL API SWITCH: replace with a Groq call that scores the selections.
-    """
     if not items:
         return 0.0
-    scores     = [item.get("similarity_score", 0) for item in items]
+    scores     = [item.get("similarity_score", 0.8) for item in items]
     base_score = sum(scores) / len(scores)
 
-    # Style tag bonus — reward concepts where style terms appear in descriptors
     style_hits = 0
     for item in items:
         descriptor = item.get("style_descriptor", "").lower()
@@ -34,8 +27,9 @@ def retrieval_agent(state: AppState) -> AppState:
     concepts       = furniture_plan["concepts"]
     state = log_stage_start(state, "retrieval")
     state = log_event(state, "retrieval", "search_start",
-        f"Starting product search for {len(concepts)} concepts",
+        f"Starting product retrieval for {len(concepts)} concepts",
         data={"num_concepts": len(concepts)})
+
     try:
         sourced = []
         for concept_plan in concepts:
@@ -45,17 +39,46 @@ def retrieval_agent(state: AppState) -> AppState:
             planned_items = concept_plan["planned_items"]
             style_tags    = concept_plan.get("style_tags", [])
             selected_items = []
-            total_cost = 0.0
+            total_cost     = 0.0
 
             for item in planned_items:
                 category    = item["category"]
                 style_query = item["style_query"]
                 budget_ceil = item["budget_ceiling"]
                 max_width   = item.get("max_width_inches")
+                product_id  = item.get("product_id")  # direct lookup if available
 
+                # ── Direct lookup by product_id (catalog-grounded mode) ──────
+                if product_id:
+                    state = log_event(state, "retrieval", "direct_lookup",
+                        f"Direct lookup for product '{product_id}' in '{concept_name}'",
+                        data={"product_id": product_id, "category": category})
+
+                    chosen = get_product_by_id(product_id)
+
+                    if chosen:
+                        chosen["within_budget"]  = chosen["price"] <= budget_ceil
+                        chosen["budget_ceiling"] = budget_ceil
+                        chosen["similarity_score"] = 1.0  # direct match = perfect
+                        selected_items.append(chosen)
+                        total_cost += chosen["price"]
+
+                        state = log_event(state, "retrieval", "product_selected",
+                            f"Direct match: '{chosen['name']}' ${chosen['price']}",
+                            level="success",
+                            data={
+                                "concept":       concept_name,
+                                "category":      category,
+                                "product_name":  chosen["name"],
+                                "price":         chosen["price"],
+                                "within_budget": chosen["within_budget"],
+                                "mode":          "direct_lookup"
+                            })
+                        continue
+
+                # ── Semantic search fallback ──────────────────────────────────
                 state = log_event(state, "retrieval", "searching",
-                    f"Searching for {category} matching '{style_query}' "
-                    f"under ${budget_ceil}",
+                    f"Searching for {category} matching '{style_query}' under ${budget_ceil}",
                     data={"category": category, "budget_ceiling": budget_ceil})
 
                 candidates = search_products(
@@ -83,7 +106,8 @@ def retrieval_agent(state: AppState) -> AppState:
                             "product_name":     chosen["name"],
                             "price":            chosen["price"],
                             "within_budget":    chosen["within_budget"],
-                            "similarity_score": chosen["similarity_score"]
+                            "similarity_score": chosen["similarity_score"],
+                            "mode":             "semantic_search"
                         })
                 else:
                     state = log_event(state, "retrieval", "no_match",
@@ -91,7 +115,6 @@ def retrieval_agent(state: AppState) -> AppState:
                         level="warning",
                         data={"concept": concept_name, "category": category})
 
-            # Critic check — compute style coherence per concept
             coherence = _compute_style_coherence(selected_items, style_tags)
             state = log_event(state, "retrieval", "coherence_check",
                 f"Style coherence for '{concept_name}': "
@@ -112,7 +135,7 @@ def retrieval_agent(state: AppState) -> AppState:
             })
 
         state = log_event(state, "retrieval", "search_complete",
-            "Product search completed for all concepts",
+            "Product retrieval completed for all concepts",
             level="success",
             data={"num_concepts": len(sourced)})
         state = log_stage_end(state, "retrieval")
@@ -130,24 +153,16 @@ def retrieval_agent(state: AppState) -> AppState:
         }
 
 
-def _pick_best(candidates: list, budget_ceil: float,
-               max_width: float) -> dict:
-    # Pass 1: strict — in stock + budget + dimensions
-    for c in sorted(candidates,
-                    key=lambda x: x["similarity_score"], reverse=True):
+def _pick_best(candidates: list, budget_ceil: float, max_width: float) -> dict:
+    for c in sorted(candidates, key=lambda x: x["similarity_score"], reverse=True):
         if not c["in_stock"]: continue
         if c["price"] > budget_ceil: continue
         if max_width and c["dimensions"]["width"] > max_width: continue
         return c
-    # Pass 2: relax budget constraint
-    for c in sorted(candidates,
-                    key=lambda x: x["similarity_score"], reverse=True):
+    for c in sorted(candidates, key=lambda x: x["similarity_score"], reverse=True):
         if not c["in_stock"]: continue
         if max_width and c["dimensions"]["width"] > max_width: continue
         return c
-    # Pass 3: best similarity regardless
     if candidates:
-        return sorted(candidates,
-                      key=lambda x: x["similarity_score"],
-                      reverse=True)[0]
+        return sorted(candidates, key=lambda x: x["similarity_score"], reverse=True)[0]
     return None

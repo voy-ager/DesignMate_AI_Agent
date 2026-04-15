@@ -121,7 +121,61 @@ def _search_pinecone(query: str, category: str, limit: int) -> list:
     return results
 
 
-# ── Public interface (unchanged) ──────────────────────────────────────────────
+# ── Direct product lookup by ID ───────────────────────────────────────────────
+def get_product_by_id(product_id: str) -> dict | None:
+    """
+    Fetches a single product by its Pinecone vector ID.
+    Used by retrieval agent in catalog-grounded mode.
+    """
+    if _use_pinecone:
+        try:
+            index  = _get_pinecone_index()
+            result = index.fetch(ids=[product_id])
+            vectors = result.vectors
+            if not vectors or product_id not in vectors:
+                return None
+            meta = vectors[product_id].metadata
+            dims = meta.get("dimensions", "{}")
+            if isinstance(dims, str):
+                try:
+                    dims = json.loads(dims)
+                except Exception:
+                    dims = {}
+            return {
+                "product_id":       product_id,
+                "category":         meta.get("category", ""),
+                "name":             meta.get("name", ""),
+                "price":            float(meta.get("price", 0)),
+                "dimensions":       dims,
+                "style_descriptor": meta.get("style_descriptor", ""),
+                "description":      meta.get("description", ""),
+                "purchase_url":     meta.get("purchase_url", ""),
+                "in_stock":         bool(meta.get("in_stock", True)),
+                "similarity_score": 1.0,
+            }
+        except Exception as e:
+            print(f"[VectorStore] get_product_by_id error: {e}")
+            return None
+
+    # Fallback: search mock catalog by id
+    _seed_mock_catalog()
+    for p in _product_store:
+        if p.get("id") == product_id:
+            return {
+                "product_id":       p["id"],
+                "category":         p["category"],
+                "name":             p["name"],
+                "price":            p["price"],
+                "dimensions":       p["dimensions"],
+                "style_descriptor": p["style_descriptor"],
+                "purchase_url":     p["purchase_url"],
+                "in_stock":         p["in_stock"],
+                "similarity_score": 1.0,
+            }
+    return None
+
+
+# ── Public interface ───────────────────────────────────────────────────────────
 def search_products(query: str, category: str, limit: int = 3) -> list:
     """
     Search for products matching query within a category.
