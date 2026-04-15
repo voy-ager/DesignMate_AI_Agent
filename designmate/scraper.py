@@ -1,6 +1,6 @@
 # scraper.py
-# Scrapes Article.com category pages, extracts product URLs automatically,
-# then scrapes each product page and loads into Pinecone.
+# Scrapes Article.com product pages using Firecrawl and loads into Pinecone.
+# Product URLs sourced via SerpAPI Google search — verified working.
 # Run once to populate the vector database:
 #   python scraper.py
 
@@ -17,52 +17,51 @@ load_dotenv()
 PINECONE_API_KEY  = os.getenv("PINECONE_API_KEY")
 FIRECRAWL_API_KEY = os.getenv("FIRECRAWL_API_KEY")
 INDEX_NAME        = "designmate-products"
-PRODUCTS_PER_CAT  = 3
 
-# Article.com category pages — scraper finds product links automatically
-CATEGORY_PAGES = {
-    "sofa":         "https://www.article.com/category/sofas",
-    "rug":          "https://www.article.com/category/rugs",
-    "floor_lamp":   "https://www.article.com/category/floor-lamps",
-    "accent_chair": "https://www.article.com/category/accent-chairs",
-    "bookshelf":    "https://www.article.com/category/shelving",
+# Verified Article.com product URLs per category (sourced via SerpAPI)
+PRODUCT_URLS = {
+    "sofa": [
+        "https://www.article.com/product/25356/ceni-83-sofa-quarry-gray",
+        "https://www.article.com/product/22739/timber-90-leather-sofa-charme-tan",
+        "https://www.article.com/product/27068/sven-88-tufted-sofa-fir-green",
+    ],
+    "rug": [
+        "https://www.article.com/product/24491/arizona-8-x-10-rug",
+        "https://www.article.com/product/23754/hira-8-x-10-rug-natural-ivory",
+        "https://www.article.com/product/1834/texa-8-x-10-rug-vanilla-ivory",
+    ],
+    "floor_lamp": [
+        "https://www.article.com/product/13996/moon-floor-lamp-gold",
+        "https://www.article.com/product/12482/heron-floor-lamp-black",
+        "https://www.article.com/product/17790/arvo-floor-lamp-white",
+    ],
+    "accent_chair": [
+        "https://www.article.com/product/25557/mod-35-lounge-chair-blue-berry",
+        "https://www.article.com/product/26648/riley-42-grand-swivel-chair-napa-charcoal",
+        "https://www.article.com/product/27028/everse-33-5-velvet-lounge-chair-melange-espresso",
+    ],
+    "bookshelf": [
+        "https://www.article.com/product/25676/fantol-51-5-shelving-unit-wide-natural-oak",
+        "https://www.article.com/product/21758/caliper-47-shelving-unit-white-walnut",
+        "https://www.article.com/product/29692/krossa-32-5-shelving-unit-tall-walnut",
+    ],
 }
 
 
-def _extract_product_urls(markdown: str, limit: int) -> list:
-    """
-    Extracts individual product URLs from an Article.com category page.
-    Article product URLs follow the pattern: article.com/product/{id}/{slug}
-    """
-    pattern = r'https://www\.article\.com/product/\d+/[^\s\)\]"\'?]+'
-    urls = re.findall(pattern, markdown)
-
-    # Deduplicate while preserving order
-    seen   = set()
-    unique = []
-    for url in urls:
-        if url not in seen:
-            seen.add(url)
-            unique.append(url)
-
-    print(f"  Found {len(unique)} product URLs, taking first {limit}")
-    return unique[:limit]
-
-
 def _extract_product_data(markdown: str, url: str, category: str) -> dict:
-    """
-    Extracts structured product data from an Article.com product page.
-    """
-    # Extract name from first h1
+    """Extracts structured product data from an Article.com product page."""
+
+    # Name from h1
     name = ""
     h1 = re.search(r'^#\s+(.+)$', markdown, re.MULTILINE)
     if h1:
         name = h1.group(1).strip()
+    name = re.sub(r'\s*-\s*Article.*$', '', name).strip()
     if not name:
         slug = url.rstrip("/").split("/")[-1]
         name = slug.replace("-", " ").title()
 
-    # Extract price — Article uses formats like $1,299 or $599
+    # Price
     price = 0.0
     price_match = re.search(r'\$\s*([\d,]+(?:\.\d{2})?)', markdown)
     if price_match:
@@ -70,17 +69,17 @@ def _extract_product_data(markdown: str, url: str, category: str) -> dict:
     if price == 0.0:
         price = _default_price(category)
 
-    # Extract product ID from URL
-    product_id = url.split("/product/")[1].split("/")[0]
+    # Product ID from URL
+    product_id = url.rstrip("/").split("/")[-2]
 
-    # Build style descriptor
+    # Style descriptor
     desc_parts = [name.lower(), category.replace("_", " ")]
 
     colors = re.findall(
         r'\b(white|black|gray|grey|beige|brown|oak|walnut|blue|green|'
         r'yellow|red|cream|natural|dark|light|metal|fabric|velvet|'
         r'linen|cotton|wool|leather|wood|brass|chrome|gold|silver|'
-        r'charcoal|ivory|sand|navy|teal|olive|blush|cognac)\b',
+        r'charcoal|ivory|sand|navy|teal|olive|blush|cognac|tan|ivory)\b',
         markdown.lower()
     )
     if colors:
@@ -127,59 +126,25 @@ def _default_dimensions(category: str) -> dict:
 
 
 def scrape_products() -> list:
-    """
-    Scrapes Article.com category pages to find product URLs automatically,
-    then scrapes each product page for details.
-    """
+    """Scrapes each Article.com product page for real data."""
     app      = FirecrawlApp(api_key=FIRECRAWL_API_KEY)
     products = []
 
-    for category, category_url in CATEGORY_PAGES.items():
+    for category, urls in PRODUCT_URLS.items():
         print(f"\n[Firecrawl] Category: {category}")
-        print(f"  Scraping category page...")
-
-        try:
-            # Step 1: scrape category page to get product URLs
-            cat_result   = app.scrape_url(category_url)
-            cat_markdown = cat_result.get("markdown", "")
-            product_urls = _extract_product_urls(cat_markdown, PRODUCTS_PER_CAT)
-
-            if not product_urls:
-                print(f"  No product URLs found, using fallback")
-                products.append(_fallback_product(category))
-                continue
-
-            # Step 2: scrape each product page
-            for url in product_urls:
-                try:
-                    print(f"  -> {url[:80]}...")
-                    prod_result   = app.scrape_url(url)
-                    prod_markdown = prod_result.get("markdown", "")
-                    product       = _extract_product_data(prod_markdown, url, category)
-                    products.append(product)
-                    print(f"  OK {product['name']} -- ${product['price']}")
-                except Exception as e:
-                    print(f"  FAIL product: {e}")
-
-        except Exception as e:
-            print(f"  FAIL category: {e}")
-            products.append(_fallback_product(category))
+        for url in urls:
+            try:
+                print(f"  -> {url[:80]}...")
+                result   = app.scrape_url(url)
+                markdown = result.get("markdown", "")
+                product  = _extract_product_data(markdown, url, category)
+                products.append(product)
+                print(f"  OK {product['name']} -- ${product['price']}")
+            except Exception as e:
+                print(f"  FAIL: {e}")
 
     print(f"\n[Firecrawl] Scraped {len(products)} products total")
     return products
-
-
-def _fallback_product(category: str) -> dict:
-    return {
-        "id":               f"{category}_fallback",
-        "category":         category,
-        "name":             f"{category.replace('_', ' ').title()} - Article",
-        "price":            _default_price(category),
-        "dimensions":       _default_dimensions(category),
-        "style_descriptor": f"{category.replace('_', ' ')} modern contemporary minimalist",
-        "purchase_url":     f"https://www.article.com/category/{category.replace('_', '-')}",
-        "in_stock":         True
-    }
 
 
 def load_into_pinecone(products: list):
